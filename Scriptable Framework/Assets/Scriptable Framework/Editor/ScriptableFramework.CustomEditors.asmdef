@@ -1,0 +1,16 @@
+{
+    "name": "ScriptableFramework.CustomEditors",
+    "references": [
+        "ScriptableFramework"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}

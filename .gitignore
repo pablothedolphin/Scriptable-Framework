@@ -1,0 +1,19 @@
+/*
+
+/*/
+
+!.gitignore
+!README.md
+
+# Include the main folders needed
+!Scriptable Framework/
+!docs/
+!docfx/
+
+# Ignore everything inside project folder
+Scriptable Framework/*
+
+# Select which folders become included
+!Scriptable Framework/Assets/
+!Scriptable Framework/ProjectSettings/
+!Scriptable Framework/Packages/
