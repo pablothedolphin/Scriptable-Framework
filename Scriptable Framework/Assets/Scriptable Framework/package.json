@@ -1,14 +1,13 @@
 {
-  "name": "com.arup.scriptable-framework",
+  "name": "com.open.scriptable-framework",
   "displayName": "Scriptable Framework",
   "author": "Jak Hussain, Dean Giddy, Conor Galvin",
   "version": "1.2.0",
   "unity": "2018.3",
-  "description": "A modularity framework developed to better enable Unity developers to decouple and test their code using ScriptableObject based dependencies that can be dragged and dropped into the inspector. The API and workflow makes it easy to use advanced programming patterns and SOLID principals in your projects which promotes a higher quality of code.The Scriptable Framework is the core of all future module development for Arup. See GitHub Pages site for documentation.",
+  "description": "A modularity framework developed to better enable Unity developers to decouple and test their code using ScriptableObject based dependencies that can be dragged and dropped into the inspector. The API and workflow makes it easy to use advanced programming patterns and SOLID principals in your projects which promotes a higher quality of code.The Scriptable Framework is the core of all future module development for Arup. See GitHub for documentation.",
   "keywords": [
-    "Arup",
-    "Facades",
+    "Open Source",
     "Module"
   ],
-  "category": "AFE"
+  "category": "Open Source"
 }

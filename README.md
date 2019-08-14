@@ -7,13 +7,13 @@ In this repository you will find the source code, assets and project settings of
 ## NOTICE
 
 > The master branch contains our most stable and release with accurate documentation.
-> The arup-afe-dev branch contains the latest features and work-flows awaiting technical review.
+> Documentation can be found [here](https://pablothedolphin.github.io/Scriptable-Framework/).
 
 ---
 
 ## Roadmap
 
-> Roadmap is subject to change. Last reviewed 13th of August 2019.
+> Roadmap is subject to change. Last reviewed 14th of August 2019.
 
 | Version | Defining Feature                  						  				|
 | ------- | ----------------------------------------------------------------------- |
@@ -45,6 +45,6 @@ In this repository you will find the source code, assets and project settings of
 
 For more information contact:
 
-* Jak Hussain - jak.hussain@arup.com
-* Dean Giddy - dean.giddy@arup.com
-* Conor Galvin - conor.galvin@arup.com
+* [Jak Hussain](https://github.com/pablothedolphin) - jak.hussain@arup.com
+* [Dean Giddy](https://github.com/DeanGiddy) - dean.giddy@arup.com
+* [Conor Galvin](https://github.com/Cvnvr) - conor.galvin@arup.com
