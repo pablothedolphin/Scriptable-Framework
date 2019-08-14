@@ -9,6 +9,22 @@ In this repository you will find the source code, assets and project settings of
 > The master branch contains our most stable and release with accurate documentation.
 > Documentation can be found [here](https://pablothedolphin.github.io/Scriptable-Framework/).
 
+In order to install Scriptable Framework in your project, add the following to the top of your manifest.json file before the dependencies object and restart the editor. You should then find the package in the package manager UI.
+
+``` js
+"scopedRegistries": [
+  {
+     "name": "Scriptable Framework Packages",
+     "url": "http://35.227.114.200:8080",
+     "scopes": [
+       "com.open"
+     ]
+  }
+],
+```
+
+The manifest.json file can be found under "YOUR-PROJECT-FOLDER">Packages>manifest.json
+
 ---
 
 ## Roadmap
@@ -45,6 +61,6 @@ In this repository you will find the source code, assets and project settings of
 
 For more information contact:
 
-* [Jak Hussain](https://github.com/pablothedolphin) - jak.hussain@arup.com
-* [Dean Giddy](https://github.com/DeanGiddy) - dean.giddy@arup.com
-* [Conor Galvin](https://github.com/Cvnvr) - conor.galvin@arup.com
+* Jak Hussain - [GitHub](https://github.com/pablothedolphin), [Email](jak.hussain@arup.com)
+* Dean Giddy - [GitHub](https://github.com/DeanGiddy), [Email](dean.giddy@arup.com)
+* Conor Galvin - [GitHub](https://github.com/Cvnvr), [Email](conor.galvin@arup.com)
