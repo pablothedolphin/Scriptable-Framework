@@ -1,6 +1,9 @@
 - name: Introduction
   href: introduction.md
 
+- name: How To Install
+  href: howToInstall.md
+
 - name: Runtime Objects
   href: runtimeObjects.md
   items:
@@ -56,6 +59,9 @@
 
 - name: Attributes
   href: attributes.md
+
+- name: License
+  href: license.md
 
 - name: Advanced Topics
   href: advancedTopics.md

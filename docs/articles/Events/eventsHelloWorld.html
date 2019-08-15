@@ -83,6 +83,9 @@
                       <a href="../introduction.html" title="Introduction" class="">Introduction</a>
                     </li>
                     <li class="">
+                      <a href="../howToInstall.html" title="How To Install" class="">How To Install</a>
+                    </li>
+                    <li class="">
                       <span class="expand-stub"></span>
                       <a href="../runtimeObjects.html" title="Runtime Objects" class="">Runtime Objects</a>
                         
@@ -159,6 +162,9 @@
                     </li>
                     <li class="">
                       <a href="../attributes.html" title="Attributes" class="">Attributes</a>
+                    </li>
+                    <li class="">
+                      <a href="../license.html" title="License" class="">License</a>
                     </li>
                     <li class="">
                       <span class="expand-stub"></span>
@@ -244,7 +250,7 @@ public class EventRaiser : MonoBehaviour
 <p>Like on a canvas button's OnClick event, add one response to both listener components and drag your Hello World object into both. For the <code>AppEventListener</code>, assign <code>HelloWorld.SayHelloWorld ()</code> as the response. For the <code>IntEventListener</code>, assign <code>HelloWorld.SayHelloWorldManyTimes ()</code> as a <strong>Dynamic int</strong> and not a static parameter.</p>
 <p>The final result should look like this:</p>
 <p><img src="../../images/eventsHelloWorld1.png" alt="Figure1"></p>
-<p>Now when we go into play mode, depending on the current value of the bool on our Event Raiser, we should see either 1 or 5 prints in the console window. Without code you can also manually raise either event or manually trigger either listener with the buttons provided to control the effect yourself. Additionally, you can set the Value For Manual Trigger on either your IntEvent or IntEventListener to to pass your own number to the for loop for testing purposes.</p>
+<p>Now when we go into play mode, depending on the current value of the bool on our Event Raiser, we should see either 1 or 5 prints in the console window. Without code you can also manually raise either event or manually trigger either listener with the buttons provided to control the effect yourself. Additionally, you can set the <code>valueForManualTrigger</code> on either your <code>IntEvent</code> or <code>IntEventListener</code> to to pass your own number to the for loop for testing purposes.</p>
 <p>You can use this process to allow different parts of your code to function without any direct reference to each other, making it significantly easier for someone else to add, remove or edit your code.</p>
 </article>
           </div>
@@ -253,6 +259,9 @@ public class EventRaiser : MonoBehaviour
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/pablothedolphin/Scriptable-Framework/blob/master/docfx/articles/Events/eventsHelloWorld.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

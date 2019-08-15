@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Advanced Topics </title>
+    <title>How To Install </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Advanced Topics ">
+    <meta name="title" content="How To Install ">
     <meta name="generator" content="docfx 2.40.7.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -82,8 +82,8 @@
                     <li class="">
                       <a href="introduction.html" title="Introduction" class="">Introduction</a>
                     </li>
-                    <li class="">
-                      <a href="howToInstall.html" title="How To Install" class="">How To Install</a>
+                    <li class="active">
+                      <a href="howToInstall.html" title="How To Install" class="active">How To Install</a>
                     </li>
                     <li class="">
                       <span class="expand-stub"></span>
@@ -166,9 +166,9 @@
                     <li class="">
                       <a href="license.html" title="License" class="">License</a>
                     </li>
-                    <li class="active">
+                    <li class="">
                       <span class="expand-stub"></span>
-                      <a href="advancedTopics.html" title="Advanced Topics" class="active">Advanced Topics</a>
+                      <a href="advancedTopics.html" title="Advanced Topics" class="">Advanced Topics</a>
                         
                         <ul class="nav level2">
                           <li class="">
@@ -192,9 +192,23 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="advanced-topics">Advanced Topics</h1>
+<h1 id="how-to-install">How To Install</h1>
 
-<p>There's a lot to discover about Scriptable Framework beyond the basics this manual has gone over so far. These articles will explain some of the finer details to help you better understand what goes on behind the curtains and how you can customise it to fit your bespoke needs.</p>
+<p>In order to install Scriptable Framework in your project, add the following to the top of your manifest.json file right before the dependencies object. Next, save the file and restart the editor. You should then find the package in the package manager UI which can be installed like any other Unity package. You can even view a list of all previous versions of the framework that are available in our registry.</p>
+<pre><code class="lang-js">&quot;scopedRegistries&quot;: [
+    {
+        &quot;name&quot;: &quot;Scriptable Framework Packages&quot;,
+        &quot;url&quot;: &quot;http://35.227.114.200:8080&quot;,
+        &quot;scopes&quot;: [
+            &quot;com.open&quot;
+        ]
+    }
+],
+</code></pre>
+<p>The manifest.json file can be found under:</p>
+<p>&quot;YOUR-PROJECT-FOLDER&quot; &gt; Packages &gt; manifest.json</p>
+<p>This needs to be done once for each Unity project you intend to use Scriptable Framework with because new Unity projects are always created with the default manifest.json file for that editor version.</p>
+<p>If you can't see the latest version of Scriptable Framework in the package manager UI, it's likely because it supports only a later version of Unity than you are currently using.</p>
 </article>
           </div>
           
@@ -202,6 +216,9 @@
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/pablothedolphin/Scriptable-Framework/blob/master/docfx/articles/howToInstall.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

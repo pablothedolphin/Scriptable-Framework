@@ -70,6 +70,6 @@ The final result should look like this:
 
 ![Figure1](~/images/eventsHelloWorld1.png)
 
-Now when we go into play mode, depending on the current value of the bool on our Event Raiser, we should see either 1 or 5 prints in the console window. Without code you can also manually raise either event or manually trigger either listener with the buttons provided to control the effect yourself. Additionally, you can set the Value For Manual Trigger on either your IntEvent or IntEventListener to to pass your own number to the for loop for testing purposes.
+Now when we go into play mode, depending on the current value of the bool on our Event Raiser, we should see either 1 or 5 prints in the console window. Without code you can also manually raise either event or manually trigger either listener with the buttons provided to control the effect yourself. Additionally, you can set the `valueForManualTrigger` on either your `IntEvent` or `IntEventListener` to to pass your own number to the for loop for testing purposes.
 
 You can use this process to allow different parts of your code to function without any direct reference to each other, making it significantly easier for someone else to add, remove or edit your code.

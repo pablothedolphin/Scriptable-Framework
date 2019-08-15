@@ -1,5 +1,5 @@
 # Scriptable Framework - Scripting API
-This section of the documentation contains details of the API that Scriptable Framework provides. To use this information, you should be familiar with the basic theory and practice of developing with Scriptable Framework which is explained in the **Manual** tab.
+This section of the documentation contains details of the API that Scriptable Framework provides. To use this information, you should be familiar with the basic theory and practice of developing with Scriptable Framework which is explained in the **Manual** tab. (Source code can be found [here](https://pablothedolphin.github.io/Scriptable-Framework/index.html))
 
 This scripting API reference is organised according to the classes available to scripts which are described along with their methods, properties and any other information relevant to their use.
 
