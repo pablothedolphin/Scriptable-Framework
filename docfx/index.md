@@ -1,5 +1,5 @@
 # **Scriptable Framework Documentation**
-The Scriptable Framework is an open source API for modular app creation based on scriptable objects, event driven programming and lessons learned from SOLID programming principals. (Source code can be found [here](https://pablothedolphin.github.io/Scriptable-Framework/index.html))
+The Scriptable Framework is an open source API for modular app creation based on scriptable objects, event driven programming and lessons learned from SOLID programming principals. (Source code can be found [here](https://github.com/pablothedolphin/Scriptable-Framework))
 
 + For detailed steps on how to make use of all the tools and workflows provided, navigate to the Manual tab.
 + For a detailed breakdown of all namespaces, types, methods and properties, navigate to the Scripting API tab.
