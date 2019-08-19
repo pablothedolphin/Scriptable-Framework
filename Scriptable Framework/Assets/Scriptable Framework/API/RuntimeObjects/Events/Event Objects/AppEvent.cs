@@ -22,7 +22,7 @@ namespace ScriptableFramework
         /// <summary>
         /// Returns the count of all listeners on this event.
         /// </summary>
-        public int ListenerCount { get { return listeners.Count; } }
+        public new int ListenerCount => listeners.Count;
 
 		/// <summary>
 		/// Invoke every function callback that is delegated to every event listener that is listenning 
@@ -98,18 +98,12 @@ namespace ScriptableFramework
         /// <summary>
         /// Clear this event of all it's listeners
         /// </summary>
-        public override void Clear ()
-        {
-            listeners.Clear ();
-        }
+        public override void Clear () => listeners.Clear ();
 
         /// <summary>
         /// Calls Clear ()
         /// </summary>
-        public override void Reset ()
-        {
-            Clear ();
-        }
+        public override void Reset () => Clear ();
     }
 
     /// <summary>
@@ -143,7 +137,7 @@ namespace ScriptableFramework
         /// <summary>
         /// Returns the count of all listeners on this event.
         /// </summary>
-        public int ListenerCount { get { return listeners.Count; } }
+        public new int ListenerCount => listeners.Count;
 
 		/// <summary>
 		/// Invoke every function callback that is delegated to every event listener that is listenning 
@@ -259,10 +253,7 @@ namespace ScriptableFramework
         /// <summary>
         /// Calls Clear ()
         /// </summary>
-        public override void Reset ()
-        {
-            Clear ();
-        }
+        public override void Reset () => Clear ();
     }
 
     /// <summary>
@@ -270,6 +261,13 @@ namespace ScriptableFramework
     /// </summary>
     public abstract class AppEventBase : RuntimeObject
     {
+		public int ListenerCount { get; }
+
+		/*private void Awake ()
+		{
+			Resources.LoadAll<RuntimeObjectDatabase> ("/")[0].RegisterEvent (this);
+		}*/
+
 		/// <summary>
 		/// Invoke every function callback that is delegated to every event listener that is listenning 
 		/// to this event.

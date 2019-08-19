@@ -24,17 +24,14 @@ namespace ScriptableFramework
         public List<T> customDefaultValues;
 		
 		/// <summary>
-		/// If true, the <c>values</c> property will initialise to the user defined default values.
+		/// If true, the <c>items</c> property will initialise to the user defined default values.
 		/// </summary>
 		public bool useCustomDefaultValues;
 
 		/// <summary>
 		/// Empties the current internal list.
 		/// </summary>
-        public override void Clear ()
-        {
-            items.Clear ();
-        }
+        public override void Clear () => items.Clear ();
 
 		/// <summary>
 		/// Clears the <c>ValueList</c> then, if <c>useCustomDefaultValues</c> is true, reinitialises the list
@@ -56,9 +53,6 @@ namespace ScriptableFramework
 		/// </summary>
 		/// <param name="allocator">Specifies which allocation type to use.</param>
 		/// <returns>A new <c>NativeArray</c> copy of this list's values.</returns>
-		public virtual NativeArray<T> ToNativeArray (Allocator allocator)
-		{
-			return new NativeArray<T> (items.ToArray (), allocator);
-		}
+		public virtual NativeArray<T> ToNativeArray (Allocator allocator) => new NativeArray<T> (items.ToArray (), allocator);
     }
 }

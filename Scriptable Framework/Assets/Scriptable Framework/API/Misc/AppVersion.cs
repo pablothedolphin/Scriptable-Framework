@@ -14,28 +14,28 @@ namespace ScriptableFramework
 		/// The major version number. For versions that should replace a prior major version.
 		/// </summary>
 		[Header ("Semantic Version")]
-		[Min (0)] [SerializeField] private int major;
+		[Min (0)] [SerializeField] private int major = 0;
 
 		/// <summary>
 		/// The minor version number. For versions that offer smaller improvements and additions.
 		/// </summary>
-		[Min (0)] [SerializeField] private int minor;
+		[Min (0)] [SerializeField] private int minor = 0;
 
 		/// <summary>
 		/// The patch version number. For versions that offer some kind of bug fix or incremental improvements.
 		/// </summary>
-		[Min (0)] [SerializeField] private int patch;
+		[Min (0)] [SerializeField] private int patch = 0;
 
 		/// <summary>
 		/// The type of release the software is intended for.
 		/// </summary>
 		[Header ("Release Suffix")]
-		[SearchableEnum] [SerializeField] private ReleaseType release;
+		[SearchableEnum] [SerializeField] private ReleaseType release = ReleaseType.Development;
 
 		/// <summary>
 		/// If an alpha or beta version, append this number to the end.
 		/// </summary>
-		[Min (0)] [SerializeField] private int releaseUpdate;
+		[Min (0)] [SerializeField] private int releaseUpdate = 0;
 
 		/// <summary>
 		/// Creates a string in the semver format according to the set values in the inspector.
