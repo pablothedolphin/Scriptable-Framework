@@ -1,6 +1,6 @@
 # Strings As Value Types?
 
-Some of you may already be aware that `System.String` is a reference type. But when you go to create a reference list or reference item, the string option is nowhere to be found. Instead, it can be found under value list and value item.
+Some of you may already be aware that `string`s are reference types. But when you go to create a reference list or reference item, the string option is nowhere to be found. Instead, it can be found under value list and value item.
 
 What we've done is define a new struct type called `DataString` which acts as a wrapper around a regular string object. We then wrote some implicit casts, overloads and overrides to make the scripting experience almost identical to using a regular string or collection of strings. Finally, we wrote a custom property drawer so that in the inspector, a DataString will render and behave exactly like a normal string. You can try it for yourself with this example code:
 
