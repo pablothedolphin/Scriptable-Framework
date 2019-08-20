@@ -226,6 +226,19 @@ references:
   commentId: T:ScriptableFramework.AppEventBase
   fullName: ScriptableFramework.AppEventBase
   nameWithType: AppEventBase
+- uid: ScriptableFramework.AppEventBase.ListenerCount
+  name: ListenerCount
+  href: api/ScriptableFramework.AppEventBase.html#ScriptableFramework_AppEventBase_ListenerCount
+  commentId: P:ScriptableFramework.AppEventBase.ListenerCount
+  fullName: ScriptableFramework.AppEventBase.ListenerCount
+  nameWithType: AppEventBase.ListenerCount
+- uid: ScriptableFramework.AppEventBase.ListenerCount*
+  name: ListenerCount
+  href: api/ScriptableFramework.AppEventBase.html#ScriptableFramework_AppEventBase_ListenerCount_
+  commentId: Overload:ScriptableFramework.AppEventBase.ListenerCount
+  isSpec: "True"
+  fullName: ScriptableFramework.AppEventBase.ListenerCount
+  nameWithType: AppEventBase.ListenerCount
 - uid: ScriptableFramework.AppEventBase.RaiseEvent(System.String,System.String,System.Int32)
   name: RaiseEvent(String, String, Int32)
   href: api/ScriptableFramework.AppEventBase.html#ScriptableFramework_AppEventBase_RaiseEvent_System_String_System_String_System_Int32_
@@ -1656,6 +1669,14 @@ references:
   fullName.vb: ScriptableFramework.ReferenceItem(Of T).Clear
   nameWithType: ReferenceItem<T>.Clear
   nameWithType.vb: ReferenceItem(Of T).Clear
+- uid: ScriptableFramework.ReferenceItem`1.forAssetReferencingOnly
+  name: forAssetReferencingOnly
+  href: api/ScriptableFramework.ReferenceItem-1.html#ScriptableFramework_ReferenceItem_1_forAssetReferencingOnly
+  commentId: F:ScriptableFramework.ReferenceItem`1.forAssetReferencingOnly
+  fullName: ScriptableFramework.ReferenceItem<T>.forAssetReferencingOnly
+  fullName.vb: ScriptableFramework.ReferenceItem(Of T).forAssetReferencingOnly
+  nameWithType: ReferenceItem<T>.forAssetReferencingOnly
+  nameWithType.vb: ReferenceItem(Of T).forAssetReferencingOnly
 - uid: ScriptableFramework.ReferenceItem`1.reference
   name: reference
   href: api/ScriptableFramework.ReferenceItem-1.html#ScriptableFramework_ReferenceItem_1_reference
@@ -1673,6 +1694,31 @@ references:
   fullName.vb: ScriptableFramework.ReferenceList(Of T)
   nameWithType: ReferenceList<T>
   nameWithType.vb: ReferenceList(Of T)
+- uid: ScriptableFramework.ReferenceList`1.Clear
+  name: Clear()
+  href: api/ScriptableFramework.ReferenceList-1.html#ScriptableFramework_ReferenceList_1_Clear
+  commentId: M:ScriptableFramework.ReferenceList`1.Clear
+  fullName: ScriptableFramework.ReferenceList<T>.Clear()
+  fullName.vb: ScriptableFramework.ReferenceList(Of T).Clear()
+  nameWithType: ReferenceList<T>.Clear()
+  nameWithType.vb: ReferenceList(Of T).Clear()
+- uid: ScriptableFramework.ReferenceList`1.Clear*
+  name: Clear
+  href: api/ScriptableFramework.ReferenceList-1.html#ScriptableFramework_ReferenceList_1_Clear_
+  commentId: Overload:ScriptableFramework.ReferenceList`1.Clear
+  isSpec: "True"
+  fullName: ScriptableFramework.ReferenceList<T>.Clear
+  fullName.vb: ScriptableFramework.ReferenceList(Of T).Clear
+  nameWithType: ReferenceList<T>.Clear
+  nameWithType.vb: ReferenceList(Of T).Clear
+- uid: ScriptableFramework.ReferenceList`1.forAssetReferencingOnly
+  name: forAssetReferencingOnly
+  href: api/ScriptableFramework.ReferenceList-1.html#ScriptableFramework_ReferenceList_1_forAssetReferencingOnly
+  commentId: F:ScriptableFramework.ReferenceList`1.forAssetReferencingOnly
+  fullName: ScriptableFramework.ReferenceList<T>.forAssetReferencingOnly
+  fullName.vb: ScriptableFramework.ReferenceList(Of T).forAssetReferencingOnly
+  nameWithType: ReferenceList<T>.forAssetReferencingOnly
+  nameWithType.vb: ReferenceList(Of T).forAssetReferencingOnly
 - uid: ScriptableFramework.ReleaseType
   name: ReleaseType
   href: api/ScriptableFramework.ReleaseType.html

@@ -194,7 +194,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="strings-as-value-types">Strings As Value Types?</h1>
 
-<p>Some of you may already be aware that <code>System.String</code> is a reference type. But when you go to create a reference list or reference item, the string option is nowhere to be found. Instead, it can be found under value list and value item.</p>
+<p>Some of you may already be aware that <code>string</code>s are reference types. But when you go to create a reference list or reference item, the string option is nowhere to be found. Instead, it can be found under value list and value item.</p>
 <p>What we've done is define a new struct type called <code>DataString</code> which acts as a wrapper around a regular string object. We then wrote some implicit casts, overloads and overrides to make the scripting experience almost identical to using a regular string or collection of strings. Finally, we wrote a custom property drawer so that in the inspector, a DataString will render and behave exactly like a normal string. You can try it for yourself with this example code:</p>
 <pre><code class="lang-cs">using UnityEngine;
 using ScriptableFramework;
@@ -221,6 +221,9 @@ public class Example : MonoBehaviour
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/pablothedolphin/Scriptable-Framework/blob/master/docfx/articles/Advanced Topics/stringsAsValueTypes.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

@@ -196,7 +196,6 @@
 
 <p>The Scriptable Framework, like many other Unity extensions, makes heavy use of the Resources folder. It does this so that the <code>Resources.LoadAll&lt;T&gt; ()</code> API can be used to load all objects of a certain type into memory in order to initialise them.</p>
 <h2 id="resetting-objects">Resetting Objects</h2>
-<p>Most of this manual refers to the ScriptableObjects you create as <code>RuntimeObjects</code> but there is one more subclass between this and the objects that you're familair with so far and that is the <code>RuntimeObject</code> class.</p>
 <p>All objects of <code>RuntimeObject</code> type have a <code>Reset ()</code> and <code>Clear ()</code> method. In the <code>RuntimeObjectManager</code> class, you will find that on runtime initialisation (which you can read more about <a href="https://docs.unity3d.com/ScriptReference/RuntimeInitializeLoadType.html">here</a>) all assets in the resources folder that inherit from RuntimeObject will have their reset method called. In most cases, this just calls the clear method indirectly, but for <code>ValueItem</code>s and <code>ValueList</code>s that have the option for using custom default values turned on, these objects will assign their custom values to their internal runtime values.</p>
 <p>This may be a small bit of code, but thanks to this design choice, the entire workflow of using default values during development is made possible and it's one of the main reasons that <strong>Scriptable Framework</strong> stands out from other development frameworks for Unity.</p>
 <p>The same happens with clearing data once exiting playmode. All of this works for your in the background so there's no need to do any configuring to this system. Just install Scriptable Framework into your project and that's it.</p>
@@ -208,6 +207,9 @@
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/pablothedolphin/Scriptable-Framework/blob/master/docfx/articles/Advanced Topics/theResourcesFolder.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

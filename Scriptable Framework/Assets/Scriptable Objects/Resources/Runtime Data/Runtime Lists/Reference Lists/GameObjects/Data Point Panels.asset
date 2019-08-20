@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: 
   items: []
+  forAssetReferencingOnly: 0

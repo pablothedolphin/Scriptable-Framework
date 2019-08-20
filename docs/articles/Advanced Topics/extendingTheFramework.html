@@ -196,7 +196,7 @@
 
 <p>Sometimes you need to work with data types or functionality that Scriptable Framework doesn't offer out of the box. Or you need a certain part of the framework to do more than it already offers to suit your specific needs. It's called &quot;Scriptable&quot; for a reason. Using inheritence, you can extend the class types that come with Scriptable Framework and override almost any method of your choosing because most of them are virtual. This is also true for any modules developed to be used with the framework. The code was written with flexibility in mind so that you as a developer can shape it the way you need it to be. Overriding methods is also a good way to work around any small bugs you may discover while using Scriptable Framework.</p>
 <h2 id="to-contribute-or-not-to-contribute">To Contribute Or Not To Contribute?</h2>
-<p>When extending the framework with your own types, you would usually keep their source code within the assets folder for your project because they would normally only be applicable to your project. In the event that you feel your extension should be included in the main code base for Scriptable Framework, feel free to create your own branch on the repo with your changes/additions and submit a merge request. Our team will review the changes and contact you if we have any questions. This is also true for bug fixes or any completely new functionality.</p>
+<p>When extending the framework with your own types, you would usually keep their source code within the assets folder for your project because they would normally only be applicable to your project. In the event that you feel your extension should be included in the main code base for Scriptable Framework, feel free to create your own branch on the repo with your changes/additions and submit a pull request. Our team will review the changes and contact you if we have any questions. This is also true for bug fixes or any completely new functionality.</p>
 <h2 id="create-your-own-runtimeitems-and-runtimelists">Create Your Own RuntimeItems and RuntimeLists</h2>
 <p>Creating your own RuntimeItem or RuntimeList is really easy. Just duplicate the source code for one of the existing types, open it and replace any references to the current type to your new type. Note that you should ensure your value types inherit from <code>ValueItem</code> or <code>ValueList</code> and your reference types inherit from <code>ReferenceItem</code> or <code>ReferenceList</code>.</p>
 <p>Below is an example of where your changes need to be made for your own ValueItem where &quot;MYTYPE&quot; stands for the type of your choice:</p>
@@ -264,6 +264,9 @@ public class MYTYPEResponse : UnityEvent&lt;MYTYPE&gt;
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/pablothedolphin/Scriptable-Framework/blob/master/docfx/articles/Advanced Topics/extendingTheFramework.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
