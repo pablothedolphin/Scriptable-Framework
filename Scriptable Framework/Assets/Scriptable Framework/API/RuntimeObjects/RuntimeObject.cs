@@ -13,12 +13,12 @@ namespace ScriptableFramework
 #if UNITY_EDITOR
 		/// <summary>
 		/// A serialized string field on every RuntimeObject to be used for documentation
-		/// of different object usecases in the editor.
+		/// of different object usecases in the editor. Gets stripped in builds to reduce build size.
 		/// </summary>
 		[TextArea]
 		[SerializeField]
 		protected string description;
-#endif
+#endif		
 
 		/// <summary>
 		/// Clear the object of its current data.

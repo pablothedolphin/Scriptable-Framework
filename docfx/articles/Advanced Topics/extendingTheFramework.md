@@ -4,7 +4,7 @@ Sometimes you need to work with data types or functionality that Scriptable Fram
 
 ## To Contribute Or Not To Contribute?
 
-When extending the framework with your own types, you would usually keep their source code within the assets folder for your project because they would normally only be applicable to your project. In the event that you feel your extension should be included in the main code base for Scriptable Framework, feel free to create your own branch on the repo with your changes/additions and submit a merge request. Our team will review the changes and contact you if we have any questions. This is also true for bug fixes or any completely new functionality.
+When extending the framework with your own types, you would usually keep their source code within the assets folder for your project because they would normally only be applicable to your project. In the event that you feel your extension should be included in the main code base for Scriptable Framework, feel free to create your own branch on the repo with your changes/additions and submit a pull request. Our team will review the changes and contact you if we have any questions. This is also true for bug fixes or any completely new functionality.
 
 ## Create Your Own RuntimeItems and RuntimeLists
 

@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: Side Panels
   m_EditorClassIdentifier: 
   description: 
-  items: []
+  items:
+  - {fileID: 3632367930637629523, guid: ceb367ae6d7713344a5b72607240af0b, type: 3}
+  forAssetReferencingOnly: 1

@@ -32,4 +32,4 @@ public class AttributeDemo : MonoBehaviour
 }
 ```
 
-Credit to [Dimitry](https://github.com/dimmpixeye) and [Ryan Hipple](https://github.com/roboryantron).
+Credit to [Dimitry](https://github.com/dimmpixeye) and [Ryan Hipple](https://github.com/roboryantron) as the original authors of these attributes.

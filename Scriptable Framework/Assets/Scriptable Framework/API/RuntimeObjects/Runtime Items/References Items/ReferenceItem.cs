@@ -20,12 +20,21 @@ namespace ScriptableFramework
 		public T reference;
 
 		/// <summary>
+		/// If true, the <c>items</c> property will not be cleared on application start.
+		/// This is useful when wanting a persistent reference to another asset rather than a runtime
+		/// reference to an object in a scene.
+		/// </summary>
+		[Space]
+		[Header ("Editor Properties")]
+		public bool forAssetReferencingOnly;
+
+		/// <summary>
 		/// Set value to null rather can create a new instance to avoid issues like
-		/// instantiating new GameObjects.
+		/// instantiating new objects. If marked for asset referencing only, the data will not be cleared.
 		/// </summary>
 		public override void Clear ()
-        {
-			reference = null;
-        }
+		{
+			if (!forAssetReferencingOnly) reference = null;
+		}
     }
 }

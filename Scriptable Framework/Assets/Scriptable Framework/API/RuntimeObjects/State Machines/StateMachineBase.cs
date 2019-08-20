@@ -18,6 +18,11 @@ namespace ScriptableFramework
 		/// </summary>
 		public int selectionIndex = 0;
 
+		/*private void Awake ()
+		{
+			Resources.LoadAll<RuntimeObjectDatabase> ("/")[0].RegisterStateMachine (this);
+		}*/
+
 		/// <summary>
 		/// Applies a new single state to the list.
 		/// </summary>

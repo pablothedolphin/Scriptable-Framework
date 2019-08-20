@@ -197,6 +197,8 @@
 <p>ReferenceItems are a kind of RuntimeItem that are designed to handle reference types like strings and GameObjects. Below is an example of a GameObjectReference which can be created via &quot;Create &gt; Runtime Objects &gt; Reference &gt; Item &gt; GameObject&quot;. All ReferenceItems have a <code>reference</code> property which actually contains the reference in question.</p>
 <p><img src="../../images/runtimeItems2.png" alt="Figure2"></p>
 <p>There are some limitations with ReferenceItems. It's mainly due to the fact that, in Unity, scene objects can maintain references to assets outside of play mode, but assets cannot maintain references to scene objects outside of play mode. So unless your ReferenceItem is storing a reference to another asset like a prefab, it will not be possible for it to go into play mode with a reference already set. This means you'll need to set the reference yourself during runtime.</p>
+<p>However, you can also use these objects to store a direct reference to another asset <strong>instead</strong> of referencing an object in your scene during runtime. To do this, simply drag in your asset reference and be sure to check the <code>forAssetReferencingOnly</code> box so that this <code>RuntimeObject</code> will ignore all calls for clearing and resetting its data. This will ensure that your reference persists both in and out of playmode.</p>
+<p>This feature is especially useful for referencing a prefab that you need to access in many parts of your code. Naturally, you won't need to use any populators when using these objects in this way.</p>
 </article>
           </div>
           
@@ -204,6 +206,9 @@
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/pablothedolphin/Scriptable-Framework/blob/master/docfx/articles/Runtime Items/referenceItems.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

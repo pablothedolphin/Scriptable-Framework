@@ -1,6 +1,6 @@
 # Settings
 
-Once Scriptable Framework is added to your project, a new menu item appear in the top left corner of the editor:
+Once Scriptable Framework is added to your project, a new menu item will appear in the top left corner of the editor:
 
 ![Figure1](~/images/settings1.png)
 

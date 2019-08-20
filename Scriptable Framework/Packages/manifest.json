@@ -1,13 +1,4 @@
 {
-  "scopedRegistries": [
-    {
-      "name": "Arup Unity Package Server",
-      "url": "http://10.251.127.6:4873/",
-      "scopes": [
-        "com.arup"
-      ]
-    }
-  ],
   "dependencies": {
     "com.unity.ads": "2.0.8",
     "com.unity.analytics": "3.2.2",

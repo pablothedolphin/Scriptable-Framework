@@ -4,8 +4,6 @@ The Scriptable Framework, like many other Unity extensions, makes heavy use of t
 
 ## Resetting Objects
 
-Most of this manual refers to the ScriptableObjects you create as `RuntimeObjects` but there is one more subclass between this and the objects that you're familair with so far and that is the `RuntimeObject` class. 
-
 All objects of `RuntimeObject` type have a `Reset ()` and `Clear ()` method. In the `RuntimeObjectManager` class, you will find that on runtime initialisation (which you can read more about [here](https://docs.unity3d.com/ScriptReference/RuntimeInitializeLoadType.html)) all assets in the resources folder that inherit from RuntimeObject will have their reset method called. In most cases, this just calls the clear method indirectly, but for `ValueItem`s and `ValueList`s that have the option for using custom default values turned on, these objects will assign their custom values to their internal runtime values.
 
 This may be a small bit of code, but thanks to this design choice, the entire workflow of using default values during development is made possible and it's one of the main reasons that **Scriptable Framework** stands out from other development frameworks for Unity.
