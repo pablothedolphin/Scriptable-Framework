@@ -6,7 +6,7 @@
 
 ![Figure1](~/images/versioningYourApps1.png)
 
-**Note**: You only ever need one instance of this object per project. 
+**Note**: You only ever need one instance of an `AppVersion` per project. 
 
 What makes this object special is that you can set your current version number in the inspector and then in your code, just assign the whole object into the text field of your UI. An `AppVersion` **implicitly** casts into a string of the current version number. Here's a demo of how that works.
 

@@ -11,7 +11,7 @@ namespace ScriptableFramework
     /// Give your class the CreateAssetMenu attribute to serialize an instance of it.
     /// </summary>
     /// <typeparam name="T">A class (reference type) object to be stored in this asset.</typeparam>
-    public abstract class ReferenceItem<T> : RuntimeItem<T> where T : class
+    public abstract class ReferenceItem<T> : RuntimeItem<T>, IReferenceContainer where T : class
     {
 		/// <summary>
 		/// The reference type obect being stored.
@@ -26,7 +26,14 @@ namespace ScriptableFramework
 		/// </summary>
 		[Space]
 		[Header ("Editor Properties")]
-		public bool forAssetReferencingOnly;
+		[SerializeField] protected bool forAssetReferencingOnly;
+
+		/// <summary>
+		/// Toggle this on to ensure that the object ignores all calls for either clearing or reseting its
+		/// reference(s).
+		/// </summary>
+		public bool ForAssetReferencingOnly { get => forAssetReferencingOnly; set => forAssetReferencingOnly = value; }
+
 
 		/// <summary>
 		/// Set value to null rather can create a new instance to avoid issues like
@@ -34,7 +41,7 @@ namespace ScriptableFramework
 		/// </summary>
 		public override void Clear ()
 		{
-			if (!forAssetReferencingOnly) reference = null;
+			if (!ForAssetReferencingOnly) reference = null;
 		}
     }
 }

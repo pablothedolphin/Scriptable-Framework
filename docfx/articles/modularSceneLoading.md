@@ -29,6 +29,6 @@ As you can see, you can use a `SceneAsset` like any other object type. This give
 
 You can also load scenes acynchronously with the `LoadSceneAsync ()` method if your scene is particularly large. It returns an `AsyncOperation` which you can learn more about [here](https://docs.unity3d.com/ScriptReference/AsyncOperation.html).
 
-In most cases you may find yourself not needing this handy little object type, but its good to familiarise yourself with this so that later on, you can take advantage of this feature and manage larger projects much more easily. Starting off a project using SceneAssets will also ensure that your project is that much more scalable and testable.
+In most cases you may find yourself not needing this handy little object type, but its good to familiarise yourself with this so that later on, you can take advantage of this feature and manage larger projects much more easily. Starting off a project using SceneAssets will also ensure that your project is that much more scalable and testable in the long run.
 
 Credit to [Ryan Hipple](https://github.com/roboryantron).

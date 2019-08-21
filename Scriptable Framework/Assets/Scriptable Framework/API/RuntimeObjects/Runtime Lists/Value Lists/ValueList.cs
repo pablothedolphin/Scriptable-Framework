@@ -13,11 +13,11 @@ namespace ScriptableFramework
     /// A default list can be optionally set in the inspector.
     /// </summary>
     /// <typeparam name="T">This list will be constrained to <c>struct</c> (value type) objects.</typeparam>
-    public abstract class ValueList<T> : RuntimeList<T> where T : struct
+    public abstract class ValueList<T> : RuntimeList<T>, IValueContainer where T : struct
     {
 		/// <summary>
 		/// A default set of values for this object to initialise to if, in the inspector, 
-		/// <c>useCustomDefaultValues</c> was set to true.
+		/// <c>UseCustomDefault</c> was set to true.
 		/// </summary>
 		[Space]
         [Header ("Editor Properties")]
@@ -26,22 +26,27 @@ namespace ScriptableFramework
 		/// <summary>
 		/// If true, the <c>items</c> property will initialise to the user defined default values.
 		/// </summary>
-		public bool useCustomDefaultValues;
+		[SerializeField] protected bool useCustomDefault;
+
+		/// <summary>
+		/// Toggle this on to ensure that the object resets with user defined custom default value(s).
+		/// </summary>
+		public bool UseCustomDefault { get => useCustomDefault; set => useCustomDefault = value; }
 
 		/// <summary>
 		/// Empties the current internal list.
 		/// </summary>
-        public override void Clear () => items.Clear ();
+		public override void Clear () => items.Clear ();
 
 		/// <summary>
-		/// Clears the <c>ValueList</c> then, if <c>useCustomDefaultValues</c> is true, reinitialises the list
+		/// Clears the <c>ValueList</c> then, if <c>UseCustomDefault</c> is true, reinitialises the list
 		/// with the contents of <c>customDefaultValues</c>.
 		/// </summary>
 		public override void Reset ()
         {
             Clear ();
 
-            if (useCustomDefaultValues)
+            if (useCustomDefault)
             {
                 items.AddRange (customDefaultValues);
             }

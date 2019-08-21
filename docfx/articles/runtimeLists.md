@@ -6,4 +6,4 @@ These objects extend upon the `List<T>` class in C# and can act as a 1 to 1 repl
 
 RuntimeLists are heavily influenced by the differences between reference types and value types. You can learn more about reference and value types in C# [here](https://docs.microsoft.com/en-us/dotnet/visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types).
 
-**NOTE:** RuntimeLists will globally reset themselves to their default state on application start/when you hit the play button. However, this does not happen when changing scenes during runtime.
+**NOTE:** RuntimeLists will globally reset themselves to their default state on application start/when you hit the play button. However, this does not happen when changing scenes during runtime. `ReferenceList`s CAN be an exception to this via a toggle on the object.

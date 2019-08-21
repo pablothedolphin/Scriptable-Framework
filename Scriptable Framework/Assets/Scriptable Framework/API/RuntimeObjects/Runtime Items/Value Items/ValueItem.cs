@@ -12,7 +12,7 @@ namespace ScriptableFramework
     /// A default value can be optionally set in the inspector.
     /// </summary>
     /// <typeparam name="T">A <c>struct</c> (value type) object to be stored in this asset.</typeparam>
-    public abstract class ValueItem<T> : RuntimeItem<T> where T : struct
+    public abstract class ValueItem<T> : RuntimeItem<T>, IValueContainer where T : struct
     {
 		/// <summary>
 		/// The value type object being stored.
@@ -22,16 +22,21 @@ namespace ScriptableFramework
 
 		/// <summary>
 		/// A default value for this object to initialise to if, in the inspector, 
-		/// <c>useCustomDefaultValue</c> was set to true.
+		/// <c>UseCustomDefault</c> was set to true.
 		/// </summary>
 		[Space]
         [Header ("Editor Properties")]
         public T customDefaultValue;
 
-        /// <summary>
-        /// If true, the <c>value</c> property will initialise to the user defined default value.
-        /// </summary>
-        public bool useCustomDefaultValue;
+		/// <summary>
+		/// If true, the <c>value</c> property will initialise to the user defined default value.
+		/// </summary>
+		[SerializeField] protected bool useCustomDefault;
+
+		/// <summary>
+		/// Toggle this on to ensure that the object resets with user defined custom default value(s).
+		/// </summary>
+		public bool UseCustomDefault { get => useCustomDefault; set => useCustomDefault = value; }
 
 		/// <summary>
 		/// Call the constructor of T and set value as the result.
@@ -42,12 +47,12 @@ namespace ScriptableFramework
 		}
 
 		/// <summary>
-		/// If <c>useCustomDefaultValue</c> was set to true, the <c>value</c> property will be set to
+		/// If <c>UseCustomDefault</c> was set to true, the <c>value</c> property will be set to
 		/// the user defined default. Otherwise, this will simply call <c>Clear ()</c>.
 		/// </summary>
 		public override void Reset ()
         {
-            if (useCustomDefaultValue)
+            if (useCustomDefault)
                 value = customDefaultValue;
             else
                 Clear ();

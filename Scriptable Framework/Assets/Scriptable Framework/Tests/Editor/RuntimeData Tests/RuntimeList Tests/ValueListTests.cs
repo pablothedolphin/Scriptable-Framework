@@ -28,7 +28,7 @@ namespace ScriptableFramework.Tests
                     vector3List.customDefaultValues.Add (Vector3.zero);
                 }
 
-                vector3List.useCustomDefaultValues = true;
+                vector3List.UseCustomDefault = true;
 
                 vector3List.Reset ();
 

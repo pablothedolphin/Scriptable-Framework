@@ -22,7 +22,7 @@ namespace ScriptableFramework.Tests
             public void ResetWithDefault ()
             {
                 floatValue.customDefaultValue = 12;
-                floatValue.useCustomDefaultValue = true;
+                floatValue.UseCustomDefault = true;
 
                 floatValue.Reset ();
 
