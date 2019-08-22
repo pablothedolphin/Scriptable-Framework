@@ -17,4 +17,4 @@ MonoBehaviour:
     text: 
   customDefaultValue:
     text: sgdgfsgs
-  useCustomDefaultValue: 1
+  useCustomDefault: 0

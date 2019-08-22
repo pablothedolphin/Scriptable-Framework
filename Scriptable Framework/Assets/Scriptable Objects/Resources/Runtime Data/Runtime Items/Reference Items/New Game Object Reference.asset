@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: New Game Object Reference
   m_EditorClassIdentifier: 
   description: 
-  reference: {fileID: 0}
-  forAssetReferencingOnly: 0
+  reference: {fileID: 3632367930637629523, guid: ceb367ae6d7713344a5b72607240af0b,
+    type: 3}
+  forAssetReferencingOnly: 1

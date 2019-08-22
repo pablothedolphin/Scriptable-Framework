@@ -15,4 +15,4 @@ MonoBehaviour:
   description: 
   value: 0
   customDefaultValue: 0
-  useCustomDefaultValue: 0
+  useCustomDefault: 0

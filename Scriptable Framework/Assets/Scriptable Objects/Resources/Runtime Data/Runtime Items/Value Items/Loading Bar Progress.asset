@@ -15,4 +15,4 @@ MonoBehaviour:
   description: Value to represent the data loading bar on start of app
   value: 0
   customDefaultValue: 0
-  useCustomDefaultValue: 1
+  useCustomDefault: 0

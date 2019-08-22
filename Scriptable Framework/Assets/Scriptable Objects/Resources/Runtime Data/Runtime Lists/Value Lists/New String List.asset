@@ -18,4 +18,4 @@ MonoBehaviour:
   - text: graeg
   - text: 
   - text: gfdag
-  useCustomDefaultValues: 0
+  useCustomDefault: 0

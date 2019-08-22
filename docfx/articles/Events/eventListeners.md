@@ -33,3 +33,7 @@ In the inspector you will find, in addition to the things found on an AppEventLi
 ## Organising Listeners in Your Scene
 
 When a single GameObject needs to respond to lots of different events, it can get quite messy to attach all your listener components for each different event on the same object. To avoid this, You can simply attach your listener components to some other empty GameObject and name it something like "Listeners for X". 
+
+## Limitations
+
+Listenner objects use a `UnityEvent` to store its responses. You may assign responses in a specific order but unfortunately, there is no guaruntee of the execution order of many responses on a single listener. The same is true for the execution order of many listeners from one event. If you require a specific order of execution with an event, we suggest splitting your event into multple events you can raise one after another through code.

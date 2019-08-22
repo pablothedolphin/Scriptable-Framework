@@ -16,6 +16,6 @@ Using events can enable you to to write ClassA to raise some event without any r
 
 ## When Not To Use Events
 
-Events are very useful tools for when you need to send data to and from a module or to just trigger a bunch of functionality at the same time with a single line. But, like most tools, aren't necessarily best suited for every usecase. Generally, you are free to make "hard references" to other scripts so long as those scripts were specifically designed to work together (and on the same GameObject). 
+Events are very useful tools for when you need to send data to and from a module or to just trigger a bunch of functionality at the same time with a single line. But, like most tools, aren't necessarily best suited for every usecase. Generally, you are free to make "hard references" to other scripts so long as those scripts were specifically designed to work together (like if they are on the same GameObject). 
 
-Without using events, it becomes very difficult to seperate your code from the rest of the application for use else where. So when you decide to intentionally not use an event, it should be because the scripts your are hard referencing are not designed to be seperated from the script that is referencing them.
+Without using events, it becomes very difficult to seperate your code from the rest of the application for use else where. So when you decide to intentionally not use an event, it should be because the scripts your are hard referencing are not designed to be seperated from the script that is referencing them. In other words, those scripts when used together, define a whole module and therefore shouldn't be designed to work seperately and link up with wireless programming.
