@@ -7,6 +7,7 @@ namespace ScriptableFramework
 	/// <summary>
 	/// Utility component to populate a <c>TransformList</c> with Transforms in the scene.
 	/// </summary>
+	[DefaultExecutionOrder (-1000)]
 	[AddComponentMenu ("Scriptable Framework/Populators/TransformList Populator")]
     public class TransformListPopulator : MonoBehaviour
 	{

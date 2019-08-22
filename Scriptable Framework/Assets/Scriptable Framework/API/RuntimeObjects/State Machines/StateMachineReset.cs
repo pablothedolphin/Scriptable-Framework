@@ -8,13 +8,14 @@ namespace ScriptableFramework
 	/// If using the StateMachineAPI in your scene, it is recommended to have an instance of this in your scene as well
 	/// to allow for proper initialisation.
 	/// </summary>
+	[DefaultExecutionOrder (-999)]
 	[AddComponentMenu ("Scriptable Framework/Misc/State Machine Reset")]
 	public class StateMachineReset : MonoBehaviour
 	{
 		/// <summary>
 		/// Calls <c>StateMachineBase.Reset ()</c> on all StateMachines and StateMachineControllers.
 		/// </summary>
-		private void OnEnable ()
+		private void Awake ()
 		{
 			RuntimeObjectManager.ResetObjectsOfType<StateMachineBase> ();
 		}

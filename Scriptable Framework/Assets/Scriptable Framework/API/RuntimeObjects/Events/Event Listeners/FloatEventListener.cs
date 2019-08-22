@@ -11,6 +11,7 @@ namespace ScriptableFramework
 	/// Due to limitations in serializing generic types, public references for both events
 	/// and responses need to be explicitly written when creating a FloatEventListener
 	/// </summary>
+	[DefaultExecutionOrder (-1000)]
 	[AddComponentMenu ("Scriptable Framework/Event Listeners/Float Event Listener")]
     public class FloatEventListener : AppEventListener<float>
     {

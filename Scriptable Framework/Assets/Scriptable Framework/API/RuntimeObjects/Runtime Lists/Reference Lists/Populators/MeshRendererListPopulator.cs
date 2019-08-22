@@ -7,6 +7,7 @@ namespace ScriptableFramework
 	/// <summary>
 	/// Utility component to populate a <c>MeshRendererList</c> with MeshRenderers in the scene.
 	/// </summary>
+	[DefaultExecutionOrder (-1000)]
 	[AddComponentMenu ("Scriptable Framework/Populators/MeshRendererList Populator")]
     public class MeshRendererListPopulator : MonoBehaviour
 	{

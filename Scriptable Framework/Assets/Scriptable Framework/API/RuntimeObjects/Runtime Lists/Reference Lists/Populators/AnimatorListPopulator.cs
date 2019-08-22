@@ -7,6 +7,7 @@ namespace ScriptableFramework
 	/// <summary>
 	/// Utility component to populate a <c>AnimatorList</c> with Animators in the scene.
 	/// </summary>
+	[DefaultExecutionOrder (-1000)]
 	[AddComponentMenu ("Scriptable Framework/Populators/AnimatorList Populator")]
     public class AnimatorListPopulator : MonoBehaviour
 	{

@@ -28,4 +28,4 @@ In the inspector you will find, in addition to the things found on an AppEvent, 
 
 ## Limitations
 
-The main limitation with all event objects in Scriptable Framework is that you should avoid raising them on Awake. This is because listenners register themselves in OnEnable which runs after Awake. The safest time to raise an event would on Start. This issue can be overcome by editting script execution orders.
+The main limitation with all event objects in Scriptable Framework is that you should avoid raising them on Awake. This is because listenners register themselves in OnEnable (with an execution order set to -1000) which runs after Awake. The safest time to raise an event would in your own OnEnable method (with execution order higher than -1000) or on Start.

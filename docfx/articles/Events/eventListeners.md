@@ -37,3 +37,5 @@ When a single GameObject needs to respond to lots of different events, it can ge
 ## Limitations
 
 Listenner objects use a `UnityEvent` to store its responses. You may assign responses in a specific order but unfortunately, there is no guaruntee of the execution order of many responses on a single listener. The same is true for the execution order of many listeners from one event. If you require a specific order of execution with an event, we suggest splitting your event into multple events you can raise one after another through code.
+
+The main limitation with all event objects in Scriptable Framework is that you should avoid raising them on Awake. This is because listenners register themselves in OnEnable (with an execution order set to -1000) which runs after Awake. The safest time to raise an event would in your own OnEnable method (with execution order higher than -1000) or on Start.

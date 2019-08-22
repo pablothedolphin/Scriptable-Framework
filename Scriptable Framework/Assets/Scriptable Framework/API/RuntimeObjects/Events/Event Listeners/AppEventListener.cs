@@ -6,12 +6,13 @@ using UnityEngine.Events;
 
 namespace ScriptableFramework
 {
-    /// <summary>
-    /// A component which listens to an AppEvent.
-    /// In the inspector, drag and drop in the list of responses to set up which
-    /// funtions will be called when the event is raised.
-    /// </summary>
-    [AddComponentMenu ("Scriptable Framework/Event Listeners/App Event Listener")]
+	/// <summary>
+	/// A component which listens to an AppEvent.
+	/// In the inspector, drag and drop in the list of responses to set up which
+	/// funtions will be called when the event is raised.
+	/// </summary>
+	[DefaultExecutionOrder (-1000)]
+	[AddComponentMenu ("Scriptable Framework/Event Listeners/App Event Listener")]
     public class AppEventListener : AppEventListenerBase
     {
         /// <summary>

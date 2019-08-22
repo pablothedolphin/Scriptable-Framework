@@ -7,6 +7,7 @@ namespace ScriptableFramework
 	/// <summary>
 	/// Utility component to populate a <c>AnimatorReference</c> with a Animator in the scene.
 	/// </summary>
+	[DefaultExecutionOrder (-1000)]
 	[AddComponentMenu ("Scriptable Framework/Populators/AnimatorReference Populator")]
     public class AnimatorReferencePopulator : MonoBehaviour
 	{

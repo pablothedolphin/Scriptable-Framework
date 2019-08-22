@@ -7,7 +7,7 @@ In this repository you will find the source code, assets and project settings of
 ## NOTICE
 
 > The master branch contains our most stable and release with accurate documentation.
-> Documentation can be found [here](https://pablothedolphin.github.io/Scriptable-Framework/).
+> [Documentation can be found here](https://pablothedolphin.github.io/Scriptable-Framework/).
 
 ## How To Install
 

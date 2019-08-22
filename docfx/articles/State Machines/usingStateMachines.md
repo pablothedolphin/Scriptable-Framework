@@ -1,7 +1,5 @@
 # Using State Machines
 
-## Background
-
 The API for using a StateMachine is extremely simple. In most cases you only ever need to call the `UpdateState` method You can either pass in an integer like this `StateMachine.UpdateState (0)` or a boolean `StateMachine.UpdateState (true)`. An integer will turn off all GameObjects in the GameObjectList but keep the one at that index on and a boolean will apply that state to all the GameObjects regardless of what their current state is. There are also other variations which you can read more about under `StateMachineBase` in the Scripting API [here](~/api/ScriptableFramework.StateMachineBase.html#ScriptableFramework_StateMachineBase_UpdateState_System_Boolean_).
 
 ## Initialising StateMachines

@@ -8,7 +8,7 @@ Working this way is fine in small scales but things can become clunky when you h
 
 The image above shows what the object type looks like in the inspector. Like with everything eles in Scriptable Framework, you can just drag and drop your scene files into the variables you choose to reference them by. A helpful error icon aswel as a popup dialog will appear if your scene being referenced isn't in your build settings (which prevents switching to your new scene as per how Unity was designed).
 
-Here is an example of how to use scene references:
+Here is an example of how to use this custom object type:
 
 ``` cs
 using UnityEngine;

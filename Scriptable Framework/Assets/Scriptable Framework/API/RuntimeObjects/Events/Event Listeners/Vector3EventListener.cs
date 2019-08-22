@@ -11,6 +11,7 @@ namespace ScriptableFramework
 	/// Due to limitations in serializing generic types, public references for both events
 	/// and responses need to be explicitly written when creating a Vector3EventListener
 	/// </summary>
+	[DefaultExecutionOrder (-1000)]
 	[AddComponentMenu ("Scriptable Framework/Event Listeners/Vector3 Event Listener")]
 	public class Vector3EventListener : AppEventListener<Vector3>
 	{

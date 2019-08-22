@@ -7,6 +7,7 @@ namespace ScriptableFramework
 	/// <summary>
 	/// Utility component to populate a <c>TransformReference</c> with a Transform in the scene.
 	/// </summary>
+	[DefaultExecutionOrder (-1000)]
 	[AddComponentMenu ("Scriptable Framework/Populators/TransformReference Populator")]
     public class TransformReferencePopulator : MonoBehaviour
 	{

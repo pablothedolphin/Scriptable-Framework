@@ -2,7 +2,7 @@
 
 With Scriptable Framework added to your Unity project, you can get started right away by following these steps:
 
-1. Create a folder called `Resources` anywhere in your project
+1. Create a folder called `Resources` anywhere in your project (you can have multiple Resources folders throughout your project)
 2. Navigate into the new folder
 3. Right click inside the project view and go to "Create > Runtime Objects"
 

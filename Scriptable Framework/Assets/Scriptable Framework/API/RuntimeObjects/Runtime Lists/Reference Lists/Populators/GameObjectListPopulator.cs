@@ -7,6 +7,7 @@ namespace ScriptableFramework
 	/// <summary>
 	/// Utility component to populate a <c>GameObjectList</c> with GameObjects in the scene.
 	/// </summary>
+	[DefaultExecutionOrder (-1000)]
 	[AddComponentMenu ("Scriptable Framework/Populators/GameObjectList Populator")]
     public class GameObjectListPopulator : MonoBehaviour
 	{

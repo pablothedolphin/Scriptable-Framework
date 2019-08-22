@@ -4,4 +4,4 @@ The StateMachineController is a special type of state machine which functions al
 
 ![Figure1](~/images/stateMachineControllers1.png)
 
-What's more is, a StateMachineController can also control other StateMachineControllers which allows you to easily manipulate even the most complex object heirarchies (to an extent).
+What's more is, a StateMachineController can also control other StateMachineControllers which allows you to easily manipulate very complex object heirarchies (to an extent).
