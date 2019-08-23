@@ -194,14 +194,15 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="value-items">Value Items</h1>
 
-<p>ValueItems are a kind of RuntimeItem that are designed to handle value types like floats, Vector3s and bools. Below is an example of an IntValue which can be created via &quot;Create &gt; Runtime Objects &gt; Value &gt; Item &gt; Int&quot;. All ValueItems have a <code>value</code> property which actually contains the value in question.</p>
+<p><code>ValueItem</code>s are a kind of <code>RuntimeItem</code> that are designed to handle value types like floats, Vector3s and bools. Below is an example of an IntValue which can be created via &quot;Create &gt; Runtime Objects &gt; Value &gt; Item &gt; Int&quot;. All ValueItems have a <code>value</code> property which actually contains the value in question.</p>
 <p><img src="../../images/runtimeItems1.png" alt="Figure1"></p>
 <p>In addion to the value, there are some editor propeties that are immune to the global reset effect.</p>
 <ol>
 <li>The <code>Custom Default Value</code> is an optional value that can be used to determine what the value property should reset to on application start/on entering play mode.</li>
-<li>The <code>Use Custom Default Value</code> is an optional toggle that will determine whether or not the value property will reset to zero or reset to your custom default value.</li>
+<li>The <code>Use Custom Default</code> is an optional toggle that will determine whether or not the value property will reset to zero or reset to your custom default value.</li>
 </ol>
 <p>Custom default values are a great way to test an unfinished interaction between your scripts. Usually when data is shared, one script will read from some file or database and store the results in a variable while the other script was written to read that variable and do stuff with it. With ValueItems and their custom default values, you don't need the database reading code immediately, you can just simulate that the database was already read from because your other script is only aware of your ValueItem and the value provided to it. It being a default value or the real value doesn't matter anymore.</p>
+<p><strong>Note</strong>: Scriptable Framework can also let you create a <code>ValueItem</code> of a string. If you're wondering how this was made possible, see our advanced topics.</p>
 </article>
           </div>
           
@@ -209,6 +210,9 @@
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/pablothedolphin/Scriptable-Framework/blob/master/docfx/articles/Runtime Items/valueItems.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

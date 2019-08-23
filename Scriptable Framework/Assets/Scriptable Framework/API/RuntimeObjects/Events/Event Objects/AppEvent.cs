@@ -36,10 +36,20 @@ namespace ScriptableFramework
         {
 #if UNITY_EDITOR
 			if (ScriptableFrameworkSettings.EditorEventLogging)
+			{
 #endif
-				Debug.Log (string.Format ("[EVENT] '{0}' was raised from {1}.{2}() at line {3}", name, Path.GetFileNameWithoutExtension (fileName),  methodName, callerLineNumber));
+				//System.Diagnostics.StackFrame stackFrame = new System.Diagnostics.StackFrame (1, false);
 
-            if (listeners.Count == 0)
+
+				//Debug.Log (string.Format ("[EVENT] '{0}' was raised from {1}.{2} at line {3}", name, Path.GetFileNameWithoutExtension (stackFrame.GetFileName ()), stackFrame.GetMethod ().Name, stackFrame.GetFileLineNumber ()));
+				Debug.Log (string.Format ("[EVENT] '{0}' was raised from {1}.{2}() at line {3}", name, Path.GetFileNameWithoutExtension (fileName), methodName, callerLineNumber));
+
+#if UNITY_EDITOR
+			}
+#endif
+
+
+			if (listeners.Count == 0)
             {
                 Debug.LogWarning (string.Format ("[EVENT] '{0}' was raised but has no listeners", name));
                 return false;

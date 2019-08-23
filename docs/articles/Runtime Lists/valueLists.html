@@ -194,14 +194,15 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="value-lists">Value Lists</h1>
 
-<p>ValueLists are a kind of RuntimeList that are designed to handle value types like floats, Vector3s and bools. Below is an example of an IntList which can be created via &quot;Create &gt; Runtime Objects &gt; Value &gt; List &gt; Ints&quot;. All ValueLists have an <code>items</code> property which actually contains the values in question.</p>
+<p><code>ValueList</code>s are a kind of <code>RuntimeList</code> that are designed to handle value types like floats, Vector3s and bools. Below is an example of an IntList which can be created via &quot;Create &gt; Runtime Objects &gt; Value &gt; List &gt; Ints&quot;. All ValueLists have an <code>items</code> property which actually contains the values in question.</p>
 <p><img src="../../images/runtimeLists1.png" alt="Figure1"></p>
 <p>In addion to the items it hols, there are some editor propeties that are immune to the global reset effect.</p>
 <ol>
 <li>The <code>Custom Default Values</code> is an optional property that can be used to determine what the internal list should reset to on application start/on entering play mode.</li>
-<li>The <code>Use Custom Default Values</code> is an optional toggle that will determine whether or not the internal list will reset to zero or reset to your custom default value.</li>
+<li>The <code>Use Custom Default</code> is an optional toggle that will determine whether or not the internal list will reset to zero or reset to your custom default value.</li>
 </ol>
 <p>Custom default values are a great way to test an unfinished interaction between your scripts. Usually when data is shared, one script will read from some file or database and store the results in a variable while the other script was written to read that variable and do stuff with it. With ValueLists and their custom default values, you don't need the database reading code immediately, you can just simulate that the database was already read from because your other script is only aware of your ValueList and the values provided to it. The values being some custom default values or the real values doesn't matter anymore.</p>
+<p><strong>Note</strong>: Scriptable Framework can also let you create a <code>ValueList</code> of strings. If you're wondering how this was made possible, see our advanced topics.</p>
 </article>
           </div>
           
@@ -209,6 +210,9 @@
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/pablothedolphin/Scriptable-Framework/blob/master/docfx/articles/Runtime Lists/valueLists.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

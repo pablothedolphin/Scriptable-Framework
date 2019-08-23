@@ -87,6 +87,18 @@
                         
                         <ul class="nav level2">
                           <li class="">
+                            <a href="ScriptableFramework.AnimatorList.html" title="AnimatorList" class="">AnimatorList</a>
+                          </li>
+                          <li class="">
+                            <a href="ScriptableFramework.AnimatorListPopulator.html" title="AnimatorListPopulator" class="">AnimatorListPopulator</a>
+                          </li>
+                          <li class="">
+                            <a href="ScriptableFramework.AnimatorReference.html" title="AnimatorReference" class="">AnimatorReference</a>
+                          </li>
+                          <li class="">
+                            <a href="ScriptableFramework.AnimatorReferencePopulator.html" title="AnimatorReferencePopulator" class="">AnimatorReferencePopulator</a>
+                          </li>
+                          <li class="">
                             <a href="ScriptableFramework.AppEvent.html" title="AppEvent" class="">AppEvent</a>
                           </li>
                           <li class="">
@@ -202,6 +214,12 @@
                           </li>
                           <li class="">
                             <a href="ScriptableFramework.IntValue.html" title="IntValue" class="">IntValue</a>
+                          </li>
+                          <li class="">
+                            <a href="ScriptableFramework.IReferenceContainer.html" title="IReferenceContainer" class="">IReferenceContainer</a>
+                          </li>
+                          <li class="">
+                            <a href="ScriptableFramework.IValueContainer.html" title="IValueContainer" class="">IValueContainer</a>
                           </li>
                           <li class="">
                             <a href="ScriptableFramework.MeshRendererList.html" title="MeshRendererList" class="">MeshRendererList</a>
@@ -432,10 +450,16 @@
                             <a href="ScriptableFramework.Tests.ReferenceItemTests.ClearData.html" title="ReferenceItemTests.ClearData" class="">ReferenceItemTests.ClearData</a>
                           </li>
                           <li class="">
+                            <a href="ScriptableFramework.Tests.ReferenceItemTests.ClearWithForAssetReferencingOnly.html" title="ReferenceItemTests.ClearWithForAssetReferencingOnly" class="">ReferenceItemTests.ClearWithForAssetReferencingOnly</a>
+                          </li>
+                          <li class="">
                             <a href="ScriptableFramework.Tests.ReferenceListTests.html" title="ReferenceListTests" class="">ReferenceListTests</a>
                           </li>
                           <li class="">
                             <a href="ScriptableFramework.Tests.ReferenceListTests.ClearData.html" title="ReferenceListTests.ClearData" class="">ReferenceListTests.ClearData</a>
+                          </li>
+                          <li class="">
+                            <a href="ScriptableFramework.Tests.ReferenceListTests.ClearWithForAssetReferencingOnly.html" title="ReferenceListTests.ClearWithForAssetReferencingOnly" class="">ReferenceListTests.ClearWithForAssetReferencingOnly</a>
                           </li>
                           <li class="">
                             <a href="ScriptableFramework.Tests.StateMachineTests.html" title="StateMachineTests" class="">StateMachineTests</a>
@@ -506,13 +530,20 @@
     <div class="level3"><a class="xref" href="ScriptableFramework.ValueList-1.html">ValueList</a>&lt;<span class="xref">Color</span>&gt;</div>
     <div class="level4"><span class="xref">ColorList</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="ScriptableFramework.IValueContainer.html">IValueContainer</a></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
       <a class="xref" href="ScriptableFramework.ValueList-1.html#ScriptableFramework_ValueList_1_customDefaultValues">ValueList&lt;Color&gt;.customDefaultValues</a>
     </div>
     <div>
-      <a class="xref" href="ScriptableFramework.ValueList-1.html#ScriptableFramework_ValueList_1_useCustomDefaultValues">ValueList&lt;Color&gt;.useCustomDefaultValues</a>
+      <a class="xref" href="ScriptableFramework.ValueList-1.html#ScriptableFramework_ValueList_1_useCustomDefault">ValueList&lt;Color&gt;.useCustomDefault</a>
+    </div>
+    <div>
+      <a class="xref" href="ScriptableFramework.ValueList-1.html#ScriptableFramework_ValueList_1_UseCustomDefault">ValueList&lt;Color&gt;.UseCustomDefault</a>
     </div>
     <div>
       <a class="xref" href="ScriptableFramework.ValueList-1.html#ScriptableFramework_ValueList_1_Clear">ValueList&lt;Color&gt;.Clear()</a>
@@ -582,7 +613,11 @@
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="ScriptableFramework_ColorList_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ColorList : ValueList&lt;Color&gt;, IList&lt;Color&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class ColorList : ValueList&lt;Color&gt;, IList&lt;Color&gt;, IValueContainer</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="ScriptableFramework.IValueContainer.html">IValueContainer</a>
   </div>
 </article>
           </div>

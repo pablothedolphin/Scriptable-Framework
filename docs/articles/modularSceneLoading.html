@@ -198,7 +198,7 @@
 <p>Working this way is fine in small scales but things can become clunky when you have many scenes you need to load between. Scene index orders can change and so can their file names. It is for this reason that Scriptable Framework includes <code>SceneAsset</code>s which can let you store a reference to the scene asset itself without needing to hard code its name or index.</p>
 <p><img src="../images/modularSceneLoading1.png" alt="Figure1"></p>
 <p>The image above shows what the object type looks like in the inspector. Like with everything eles in Scriptable Framework, you can just drag and drop your scene files into the variables you choose to reference them by. A helpful error icon aswel as a popup dialog will appear if your scene being referenced isn't in your build settings (which prevents switching to your new scene as per how Unity was designed).</p>
-<p>Here is an example of how to use scene references:</p>
+<p>Here is an example of how to use this custom object type:</p>
 <pre><code class="lang-cs">using UnityEngine;
 using ScriptableFramework;
 
@@ -214,7 +214,7 @@ public class Example : MonoBehaviour
 </code></pre>
 <p>As you can see, you can use a <code>SceneAsset</code> like any other object type. This gives you the flexibility to even work with an array of scenes if you needed to group certain scenes together. Loading a given scene through a scene reference is as simple as calling <code>LoadScene ()</code> on the object itself. Nothing else to it.</p>
 <p>You can also load scenes acynchronously with the <code>LoadSceneAsync ()</code> method if your scene is particularly large. It returns an <code>AsyncOperation</code> which you can learn more about <a href="https://docs.unity3d.com/ScriptReference/AsyncOperation.html">here</a>.</p>
-<p>In most cases you may find yourself not needing this handy little object type, but its good to familiarise yourself with this so that later on, you can take advantage of this feature and manage larger projects much more easily. Starting off a project using SceneAssets will also ensure that your project is that much more scalable and testable.</p>
+<p>In most cases you may find yourself not needing this handy little object type, but its good to familiarise yourself with this so that later on, you can take advantage of this feature and manage larger projects much more easily. Starting off a project using SceneAssets will also ensure that your project is that much more scalable and testable in the long run.</p>
 <p>Credit to <a href="https://github.com/roboryantron">Ryan Hipple</a>.</p>
 </article>
           </div>
@@ -223,6 +223,9 @@ public class Example : MonoBehaviour
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/pablothedolphin/Scriptable-Framework/blob/master/docfx/articles/modularSceneLoading.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

@@ -22,38 +22,32 @@ namespace ScriptableFramework
 		/// Actually runs the loop which sets the GameObjects on or off.
 		/// </summary>
 		/// <param name="newSelectionIndex">Index of the object to be left on.</param>
-		/// <returns>Whether or not the operation succeeded.</returns>
-		protected override bool ApplyState(int newSelectionIndex)
+		protected override void ApplyState(int newSelectionIndex)
 		{
 			selectionIndex = newSelectionIndex;
 
 			for (int i = 0; i < gameObjects.Count; i++)
 			{
-				if (!CheckListItemBeforeUpdate(i)) return false;
+				if (!CheckListItemBeforeUpdate(i)) return;
 
 				gameObjects[i].SetActive(i == selectionIndex);
 			}
-
-			return true;
 		}
 
 		/// <summary>
 		/// Actually runs the loop which sets all the GameObjects on or off.
 		/// </summary>
 		/// <param name="stateForAll">The new state for all GameObjects.</param>
-		/// <returns>Whether or not the operation succeeded.</returns>
-		protected override bool ApplyState(bool stateForAll)
+		protected override void ApplyState (bool stateForAll)
 		{
 			selectionIndex = -1;
 
 			for (int i = 0; i < gameObjects.Count; i++)
 			{
-				if (!CheckListItemBeforeUpdate(i)) return false;
+				if (!CheckListItemBeforeUpdate(i)) return;
 
 				gameObjects[i].SetActive(stateForAll);
 			}
-
-			return true;
 		}
 
 		/// <summary>
@@ -61,19 +55,16 @@ namespace ScriptableFramework
 		/// </summary>
 		/// <param name="newSelectionIndex">The index of the object to update.</param>
 		/// <param name="stateAtThisObject">The state to provide that object with.</param>
-		/// <returns>Whether or not the operation succeeded.</returns>
-		protected override bool ApplyState(int newSelectionIndex, bool stateAtThisObject)
+		protected override void ApplyState (int newSelectionIndex, bool stateAtThisObject)
 		{
 			selectionIndex = -1;
 
 			for (int i = 0; i < gameObjects.Count; i++)
 			{
-				if (!CheckListItemBeforeUpdate(i)) return false;
+				if (!CheckListItemBeforeUpdate(i)) return;
 			}
 
 			gameObjects[newSelectionIndex].SetActive(stateAtThisObject);
-
-			return true;
 		}
 
 		/// <summary>
@@ -82,22 +73,19 @@ namespace ScriptableFramework
 		/// <param name="startIndex">Where to start applying your state (inclusive).</param>
 		/// <param name="length">How many objects to affect.</param>
 		/// <param name="stateToApply">The state to apply within your given range.</param>
-		/// <returns>Whether or not the operation succeeded.</returns>
-		protected override bool ApplyState(int startIndex, int length, bool stateToApply)
+		protected override void ApplyState (int startIndex, int length, bool stateToApply)
 		{
 			selectionIndex = -1;
 
 			for (int i = 0; i < gameObjects.Count; i++)
 			{
-				if (!CheckListItemBeforeUpdate(i)) return false;
+				if (!CheckListItemBeforeUpdate(i)) return;
 
 				if (i >= startIndex && i < startIndex + length)
 					gameObjects[i].SetActive (stateToApply);
 				else
 					gameObjects[i].SetActive (!stateToApply);
 			}
-
-			return true;
 		}
 
 		/// <summary>

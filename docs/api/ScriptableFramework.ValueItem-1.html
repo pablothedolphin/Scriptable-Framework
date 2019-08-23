@@ -87,6 +87,18 @@
                         
                         <ul class="nav level2">
                           <li class="">
+                            <a href="ScriptableFramework.AnimatorList.html" title="AnimatorList" class="">AnimatorList</a>
+                          </li>
+                          <li class="">
+                            <a href="ScriptableFramework.AnimatorListPopulator.html" title="AnimatorListPopulator" class="">AnimatorListPopulator</a>
+                          </li>
+                          <li class="">
+                            <a href="ScriptableFramework.AnimatorReference.html" title="AnimatorReference" class="">AnimatorReference</a>
+                          </li>
+                          <li class="">
+                            <a href="ScriptableFramework.AnimatorReferencePopulator.html" title="AnimatorReferencePopulator" class="">AnimatorReferencePopulator</a>
+                          </li>
+                          <li class="">
                             <a href="ScriptableFramework.AppEvent.html" title="AppEvent" class="">AppEvent</a>
                           </li>
                           <li class="">
@@ -202,6 +214,12 @@
                           </li>
                           <li class="">
                             <a href="ScriptableFramework.IntValue.html" title="IntValue" class="">IntValue</a>
+                          </li>
+                          <li class="">
+                            <a href="ScriptableFramework.IReferenceContainer.html" title="IReferenceContainer" class="">IReferenceContainer</a>
+                          </li>
+                          <li class="">
+                            <a href="ScriptableFramework.IValueContainer.html" title="IValueContainer" class="">IValueContainer</a>
                           </li>
                           <li class="">
                             <a href="ScriptableFramework.MeshRendererList.html" title="MeshRendererList" class="">MeshRendererList</a>
@@ -432,10 +450,16 @@
                             <a href="ScriptableFramework.Tests.ReferenceItemTests.ClearData.html" title="ReferenceItemTests.ClearData" class="">ReferenceItemTests.ClearData</a>
                           </li>
                           <li class="">
+                            <a href="ScriptableFramework.Tests.ReferenceItemTests.ClearWithForAssetReferencingOnly.html" title="ReferenceItemTests.ClearWithForAssetReferencingOnly" class="">ReferenceItemTests.ClearWithForAssetReferencingOnly</a>
+                          </li>
+                          <li class="">
                             <a href="ScriptableFramework.Tests.ReferenceListTests.html" title="ReferenceListTests" class="">ReferenceListTests</a>
                           </li>
                           <li class="">
                             <a href="ScriptableFramework.Tests.ReferenceListTests.ClearData.html" title="ReferenceListTests.ClearData" class="">ReferenceListTests.ClearData</a>
+                          </li>
+                          <li class="">
+                            <a href="ScriptableFramework.Tests.ReferenceListTests.ClearWithForAssetReferencingOnly.html" title="ReferenceListTests.ClearWithForAssetReferencingOnly" class="">ReferenceListTests.ClearWithForAssetReferencingOnly</a>
                           </li>
                           <li class="">
                             <a href="ScriptableFramework.Tests.StateMachineTests.html" title="StateMachineTests" class="">StateMachineTests</a>
@@ -514,11 +538,15 @@ A default value can be optionally set in the inspector.</p>
       <div class="level4"><a class="xref" href="ScriptableFramework.StringValue.html">StringValue</a></div>
       <div class="level4"><a class="xref" href="ScriptableFramework.Vector3Value.html">Vector3Value</a></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="ScriptableFramework.IValueContainer.html">IValueContainer</a></div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="ScriptableFramework.html">ScriptableFramework</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="ScriptableFramework_ValueItem_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class ValueItem&lt;T&gt; : RuntimeItem&lt;T&gt; where T : struct</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class ValueItem&lt;T&gt; : RuntimeItem&lt;T&gt;, IValueContainer where T : struct</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -542,7 +570,7 @@ A default value can be optionally set in the inspector.</p>
   
   <h4 id="ScriptableFramework_ValueItem_1_customDefaultValue" data-uid="ScriptableFramework.ValueItem`1.customDefaultValue">customDefaultValue</h4>
   <div class="markdown level1 summary"><p>A default value for this object to initialise to if, in the inspector,
-<code>useCustomDefaultValue</code> was set to true.</p>
+<code>UseCustomDefault</code> was set to true.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -566,13 +594,13 @@ A default value can be optionally set in the inspector.</p>
   </table>
   
   
-  <h4 id="ScriptableFramework_ValueItem_1_useCustomDefaultValue" data-uid="ScriptableFramework.ValueItem`1.useCustomDefaultValue">useCustomDefaultValue</h4>
+  <h4 id="ScriptableFramework_ValueItem_1_useCustomDefault" data-uid="ScriptableFramework.ValueItem`1.useCustomDefault">useCustomDefault</h4>
   <div class="markdown level1 summary"><p>If true, the <code>value</code> property will initialise to the user defined default value.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool useCustomDefaultValue</code></pre>
+    <pre><code class="lang-csharp hljs">protected bool useCustomDefault</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -614,6 +642,34 @@ A default value can be optionally set in the inspector.</p>
       </tr>
     </tbody>
   </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="ScriptableFramework_ValueItem_1_UseCustomDefault_" data-uid="ScriptableFramework.ValueItem`1.UseCustomDefault*"></a>
+  <h4 id="ScriptableFramework_ValueItem_1_UseCustomDefault" data-uid="ScriptableFramework.ValueItem`1.UseCustomDefault">UseCustomDefault</h4>
+  <div class="markdown level1 summary"><p>Toggle this on to ensure that the object resets with user defined custom default value(s).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseCustomDefault { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   
@@ -633,7 +689,7 @@ A default value can be optionally set in the inspector.</p>
   
   <a id="ScriptableFramework_ValueItem_1_Reset_" data-uid="ScriptableFramework.ValueItem`1.Reset*"></a>
   <h4 id="ScriptableFramework_ValueItem_1_Reset" data-uid="ScriptableFramework.ValueItem`1.Reset">Reset()</h4>
-  <div class="markdown level1 summary"><p>If <code>useCustomDefaultValue</code> was set to true, the <code>value</code> property will be set to
+  <div class="markdown level1 summary"><p>If <code>UseCustomDefault</code> was set to true, the <code>value</code> property will be set to
 the user defined default. Otherwise, this will simply call <code>Clear ()</code>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -643,6 +699,10 @@ the user defined default. Otherwise, this will simply call <code>Clear ()</code>
   </div>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">ScriptableFramework.RuntimeItem&lt;T&gt;.Reset()</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="ScriptableFramework.IValueContainer.html">IValueContainer</a>
+  </div>
 </article>
           </div>
           

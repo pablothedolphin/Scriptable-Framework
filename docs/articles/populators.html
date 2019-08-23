@@ -197,13 +197,14 @@
 <p>To help support the shortcomings of <code>ReferenceList</code>s and <code>ReferenceItem</code>s, Populator components have been written to help populate these objects on Awake for you. To add a populator component, you can find it in the component menu under &quot;Scriptable Framework &gt; Populators&quot;. Below is an example of a GameObjectListPopulator</p>
 <p><img src="../images/populators1.png" alt="Figure1"></p>
 <p>You can use these components by assigning the ReferenceList or ReferenceItem that you want the component to populate and assining the item(s) you want to populate it. For ReferenceLists populators, the order of the items matter because the same order will be used by the ReferenceList.</p>
-<p>Bare in mind that this is purely for when you would like your scene to initialise on Awake with your references set. In other cases where you want to set your references during runtime, you would simply write the code yourself.</p>
+<p>Bare in mind that this is purely for when you would like your scene to initialise on Awake with your references set. In other cases where you want to set your references during runtime, you would simply write the code yourself to add elements to your lists or change out your single references.</p>
 <h2 id="types-of-populators">Types of Populators</h2>
 <p>At the time of writing, Populator scripts are available for:</p>
 <ul>
 <li>GameObjects</li>
 <li>Transforms</li>
 <li>MeshRenderers</li>
+<li>Animators</li>
 </ul>
 <p>And for each of these types, there is a variant for both the ReferenceItem version and the ReferenceList version.</p>
 </article>
@@ -213,6 +214,9 @@
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/pablothedolphin/Scriptable-Framework/blob/master/docfx/articles/populators.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

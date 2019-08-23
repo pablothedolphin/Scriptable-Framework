@@ -37,7 +37,8 @@ namespace ScriptableFramework.Tests
 			[Test]
 			public void UpdateStateSuccess ()
 			{
-				Assert.True (stateMachine.UpdateState (1));
+				stateMachine.UpdateState (1);
+				Assert.True (!gameObjects[0].activeSelf && gameObjects[1].activeSelf && !gameObjects[2].activeSelf);
 			}
 
 			[Test]
@@ -79,7 +80,8 @@ namespace ScriptableFramework.Tests
 			[Test]
 			public void UpdateStateWithSameIndex ()
 			{
-				Assert.True (stateMachine.UpdateState (0));
+				stateMachine.UpdateState (0);
+				Assert.True (gameObjects[0].activeSelf && !gameObjects[1].activeSelf && !gameObjects[2].activeSelf);
 			}
 
 			[Test]
@@ -128,7 +130,8 @@ namespace ScriptableFramework.Tests
 			[Test]
 			public void UpdateStateSuccess ()
 			{
-				Assert.True (stateMachine.UpdateState (true));
+				stateMachine.UpdateState (true);
+				Assert.True (gameObjects[0].activeSelf && gameObjects[1].activeSelf && gameObjects[2].activeSelf);
 			}
 
 			[Test]
@@ -193,7 +196,8 @@ namespace ScriptableFramework.Tests
 			[Test]
 			public void UpdateStateSuccess ()
 			{
-				Assert.True (stateMachine.UpdateState (1, true));
+				stateMachine.UpdateState (1, true);
+				Assert.True (gameObjects[0].activeSelf && gameObjects[1].activeSelf && !gameObjects[2].activeSelf);
 			}
 
 			[Test]
@@ -229,7 +233,8 @@ namespace ScriptableFramework.Tests
 			[Test]
 			public void UpdateStateWithSameIndex ()
 			{
-				Assert.True (stateMachine.UpdateState (0, true));
+				stateMachine.UpdateState (0, true);
+				Assert.True (gameObjects[0].activeSelf && !gameObjects[1].activeSelf && !gameObjects[2].activeSelf);
 			}
 
 			[Test]
@@ -291,7 +296,8 @@ namespace ScriptableFramework.Tests
 			[Test]
 			public void UpdateStateSuccess ()
 			{
-				Assert.True (stateMachine.UpdateState (1, 2, true));
+				stateMachine.UpdateState (1, 2, true);
+				Assert.True (!gameObjects[0].activeSelf && gameObjects[1].activeSelf && gameObjects[2].activeSelf);
 			}
 
 			[Test]

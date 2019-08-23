@@ -17,7 +17,6 @@ namespace ScriptableFramework
 		/// <summary>
 		/// A list of the elements in this object to be accessed externally via square bracket operator.
 		/// </summary>
-		/// <value>The internal list that actually contains the elements of this object.</value>
 		[Space]
         [SerializeField]
         protected List<T> items = new List<T> ();

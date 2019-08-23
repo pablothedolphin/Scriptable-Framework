@@ -7,6 +7,106 @@ references:
   commentId: N:ScriptableFramework
   fullName: ScriptableFramework
   nameWithType: ScriptableFramework
+- uid: ScriptableFramework.AnimatorList
+  name: AnimatorList
+  href: api/ScriptableFramework.AnimatorList.html
+  commentId: T:ScriptableFramework.AnimatorList
+  fullName: ScriptableFramework.AnimatorList
+  nameWithType: AnimatorList
+- uid: ScriptableFramework.AnimatorList.SetBoolToAll(System.String,System.Boolean)
+  name: SetBoolToAll(String, Boolean)
+  href: api/ScriptableFramework.AnimatorList.html#ScriptableFramework_AnimatorList_SetBoolToAll_System_String_System_Boolean_
+  commentId: M:ScriptableFramework.AnimatorList.SetBoolToAll(System.String,System.Boolean)
+  fullName: ScriptableFramework.AnimatorList.SetBoolToAll(System.String, System.Boolean)
+  nameWithType: AnimatorList.SetBoolToAll(String, Boolean)
+- uid: ScriptableFramework.AnimatorList.SetBoolToAll*
+  name: SetBoolToAll
+  href: api/ScriptableFramework.AnimatorList.html#ScriptableFramework_AnimatorList_SetBoolToAll_
+  commentId: Overload:ScriptableFramework.AnimatorList.SetBoolToAll
+  isSpec: "True"
+  fullName: ScriptableFramework.AnimatorList.SetBoolToAll
+  nameWithType: AnimatorList.SetBoolToAll
+- uid: ScriptableFramework.AnimatorList.SetFloatToAll(System.String,System.Single)
+  name: SetFloatToAll(String, Single)
+  href: api/ScriptableFramework.AnimatorList.html#ScriptableFramework_AnimatorList_SetFloatToAll_System_String_System_Single_
+  commentId: M:ScriptableFramework.AnimatorList.SetFloatToAll(System.String,System.Single)
+  fullName: ScriptableFramework.AnimatorList.SetFloatToAll(System.String, System.Single)
+  nameWithType: AnimatorList.SetFloatToAll(String, Single)
+- uid: ScriptableFramework.AnimatorList.SetFloatToAll*
+  name: SetFloatToAll
+  href: api/ScriptableFramework.AnimatorList.html#ScriptableFramework_AnimatorList_SetFloatToAll_
+  commentId: Overload:ScriptableFramework.AnimatorList.SetFloatToAll
+  isSpec: "True"
+  fullName: ScriptableFramework.AnimatorList.SetFloatToAll
+  nameWithType: AnimatorList.SetFloatToAll
+- uid: ScriptableFramework.AnimatorList.SetIntegerToAll(System.String,System.Int32)
+  name: SetIntegerToAll(String, Int32)
+  href: api/ScriptableFramework.AnimatorList.html#ScriptableFramework_AnimatorList_SetIntegerToAll_System_String_System_Int32_
+  commentId: M:ScriptableFramework.AnimatorList.SetIntegerToAll(System.String,System.Int32)
+  fullName: ScriptableFramework.AnimatorList.SetIntegerToAll(System.String, System.Int32)
+  nameWithType: AnimatorList.SetIntegerToAll(String, Int32)
+- uid: ScriptableFramework.AnimatorList.SetIntegerToAll*
+  name: SetIntegerToAll
+  href: api/ScriptableFramework.AnimatorList.html#ScriptableFramework_AnimatorList_SetIntegerToAll_
+  commentId: Overload:ScriptableFramework.AnimatorList.SetIntegerToAll
+  isSpec: "True"
+  fullName: ScriptableFramework.AnimatorList.SetIntegerToAll
+  nameWithType: AnimatorList.SetIntegerToAll
+- uid: ScriptableFramework.AnimatorList.SetTriggerToAll(System.String)
+  name: SetTriggerToAll(String)
+  href: api/ScriptableFramework.AnimatorList.html#ScriptableFramework_AnimatorList_SetTriggerToAll_System_String_
+  commentId: M:ScriptableFramework.AnimatorList.SetTriggerToAll(System.String)
+  fullName: ScriptableFramework.AnimatorList.SetTriggerToAll(System.String)
+  nameWithType: AnimatorList.SetTriggerToAll(String)
+- uid: ScriptableFramework.AnimatorList.SetTriggerToAll*
+  name: SetTriggerToAll
+  href: api/ScriptableFramework.AnimatorList.html#ScriptableFramework_AnimatorList_SetTriggerToAll_
+  commentId: Overload:ScriptableFramework.AnimatorList.SetTriggerToAll
+  isSpec: "True"
+  fullName: ScriptableFramework.AnimatorList.SetTriggerToAll
+  nameWithType: AnimatorList.SetTriggerToAll
+- uid: ScriptableFramework.AnimatorListPopulator
+  name: AnimatorListPopulator
+  href: api/ScriptableFramework.AnimatorListPopulator.html
+  commentId: T:ScriptableFramework.AnimatorListPopulator
+  fullName: ScriptableFramework.AnimatorListPopulator
+  nameWithType: AnimatorListPopulator
+- uid: ScriptableFramework.AnimatorListPopulator.items
+  name: items
+  href: api/ScriptableFramework.AnimatorListPopulator.html#ScriptableFramework_AnimatorListPopulator_items
+  commentId: F:ScriptableFramework.AnimatorListPopulator.items
+  fullName: ScriptableFramework.AnimatorListPopulator.items
+  nameWithType: AnimatorListPopulator.items
+- uid: ScriptableFramework.AnimatorListPopulator.referenceList
+  name: referenceList
+  href: api/ScriptableFramework.AnimatorListPopulator.html#ScriptableFramework_AnimatorListPopulator_referenceList
+  commentId: F:ScriptableFramework.AnimatorListPopulator.referenceList
+  fullName: ScriptableFramework.AnimatorListPopulator.referenceList
+  nameWithType: AnimatorListPopulator.referenceList
+- uid: ScriptableFramework.AnimatorReference
+  name: AnimatorReference
+  href: api/ScriptableFramework.AnimatorReference.html
+  commentId: T:ScriptableFramework.AnimatorReference
+  fullName: ScriptableFramework.AnimatorReference
+  nameWithType: AnimatorReference
+- uid: ScriptableFramework.AnimatorReferencePopulator
+  name: AnimatorReferencePopulator
+  href: api/ScriptableFramework.AnimatorReferencePopulator.html
+  commentId: T:ScriptableFramework.AnimatorReferencePopulator
+  fullName: ScriptableFramework.AnimatorReferencePopulator
+  nameWithType: AnimatorReferencePopulator
+- uid: ScriptableFramework.AnimatorReferencePopulator.item
+  name: item
+  href: api/ScriptableFramework.AnimatorReferencePopulator.html#ScriptableFramework_AnimatorReferencePopulator_item
+  commentId: F:ScriptableFramework.AnimatorReferencePopulator.item
+  fullName: ScriptableFramework.AnimatorReferencePopulator.item
+  nameWithType: AnimatorReferencePopulator.item
+- uid: ScriptableFramework.AnimatorReferencePopulator.referenceItem
+  name: referenceItem
+  href: api/ScriptableFramework.AnimatorReferencePopulator.html#ScriptableFramework_AnimatorReferencePopulator_referenceItem
+  commentId: F:ScriptableFramework.AnimatorReferencePopulator.referenceItem
+  fullName: ScriptableFramework.AnimatorReferencePopulator.referenceItem
+  nameWithType: AnimatorReferencePopulator.referenceItem
 - uid: ScriptableFramework.AppEvent
   name: AppEvent
   href: api/ScriptableFramework.AppEvent.html
@@ -1524,6 +1624,44 @@ references:
   commentId: T:ScriptableFramework.IntValue
   fullName: ScriptableFramework.IntValue
   nameWithType: IntValue
+- uid: ScriptableFramework.IReferenceContainer
+  name: IReferenceContainer
+  href: api/ScriptableFramework.IReferenceContainer.html
+  commentId: T:ScriptableFramework.IReferenceContainer
+  fullName: ScriptableFramework.IReferenceContainer
+  nameWithType: IReferenceContainer
+- uid: ScriptableFramework.IReferenceContainer.ForAssetReferencingOnly
+  name: ForAssetReferencingOnly
+  href: api/ScriptableFramework.IReferenceContainer.html#ScriptableFramework_IReferenceContainer_ForAssetReferencingOnly
+  commentId: P:ScriptableFramework.IReferenceContainer.ForAssetReferencingOnly
+  fullName: ScriptableFramework.IReferenceContainer.ForAssetReferencingOnly
+  nameWithType: IReferenceContainer.ForAssetReferencingOnly
+- uid: ScriptableFramework.IReferenceContainer.ForAssetReferencingOnly*
+  name: ForAssetReferencingOnly
+  href: api/ScriptableFramework.IReferenceContainer.html#ScriptableFramework_IReferenceContainer_ForAssetReferencingOnly_
+  commentId: Overload:ScriptableFramework.IReferenceContainer.ForAssetReferencingOnly
+  isSpec: "True"
+  fullName: ScriptableFramework.IReferenceContainer.ForAssetReferencingOnly
+  nameWithType: IReferenceContainer.ForAssetReferencingOnly
+- uid: ScriptableFramework.IValueContainer
+  name: IValueContainer
+  href: api/ScriptableFramework.IValueContainer.html
+  commentId: T:ScriptableFramework.IValueContainer
+  fullName: ScriptableFramework.IValueContainer
+  nameWithType: IValueContainer
+- uid: ScriptableFramework.IValueContainer.UseCustomDefault
+  name: UseCustomDefault
+  href: api/ScriptableFramework.IValueContainer.html#ScriptableFramework_IValueContainer_UseCustomDefault
+  commentId: P:ScriptableFramework.IValueContainer.UseCustomDefault
+  fullName: ScriptableFramework.IValueContainer.UseCustomDefault
+  nameWithType: IValueContainer.UseCustomDefault
+- uid: ScriptableFramework.IValueContainer.UseCustomDefault*
+  name: UseCustomDefault
+  href: api/ScriptableFramework.IValueContainer.html#ScriptableFramework_IValueContainer_UseCustomDefault_
+  commentId: Overload:ScriptableFramework.IValueContainer.UseCustomDefault
+  isSpec: "True"
+  fullName: ScriptableFramework.IValueContainer.UseCustomDefault
+  nameWithType: IValueContainer.UseCustomDefault
 - uid: ScriptableFramework.MeshRendererList
   name: MeshRendererList
   href: api/ScriptableFramework.MeshRendererList.html
@@ -1677,6 +1815,23 @@ references:
   fullName.vb: ScriptableFramework.ReferenceItem(Of T).forAssetReferencingOnly
   nameWithType: ReferenceItem<T>.forAssetReferencingOnly
   nameWithType.vb: ReferenceItem(Of T).forAssetReferencingOnly
+- uid: ScriptableFramework.ReferenceItem`1.ForAssetReferencingOnly
+  name: ForAssetReferencingOnly
+  href: api/ScriptableFramework.ReferenceItem-1.html#ScriptableFramework_ReferenceItem_1_ForAssetReferencingOnly
+  commentId: P:ScriptableFramework.ReferenceItem`1.ForAssetReferencingOnly
+  fullName: ScriptableFramework.ReferenceItem<T>.ForAssetReferencingOnly
+  fullName.vb: ScriptableFramework.ReferenceItem(Of T).ForAssetReferencingOnly
+  nameWithType: ReferenceItem<T>.ForAssetReferencingOnly
+  nameWithType.vb: ReferenceItem(Of T).ForAssetReferencingOnly
+- uid: ScriptableFramework.ReferenceItem`1.ForAssetReferencingOnly*
+  name: ForAssetReferencingOnly
+  href: api/ScriptableFramework.ReferenceItem-1.html#ScriptableFramework_ReferenceItem_1_ForAssetReferencingOnly_
+  commentId: Overload:ScriptableFramework.ReferenceItem`1.ForAssetReferencingOnly
+  isSpec: "True"
+  fullName: ScriptableFramework.ReferenceItem<T>.ForAssetReferencingOnly
+  fullName.vb: ScriptableFramework.ReferenceItem(Of T).ForAssetReferencingOnly
+  nameWithType: ReferenceItem<T>.ForAssetReferencingOnly
+  nameWithType.vb: ReferenceItem(Of T).ForAssetReferencingOnly
 - uid: ScriptableFramework.ReferenceItem`1.reference
   name: reference
   href: api/ScriptableFramework.ReferenceItem-1.html#ScriptableFramework_ReferenceItem_1_reference
@@ -1719,6 +1874,23 @@ references:
   fullName.vb: ScriptableFramework.ReferenceList(Of T).forAssetReferencingOnly
   nameWithType: ReferenceList<T>.forAssetReferencingOnly
   nameWithType.vb: ReferenceList(Of T).forAssetReferencingOnly
+- uid: ScriptableFramework.ReferenceList`1.ForAssetReferencingOnly
+  name: ForAssetReferencingOnly
+  href: api/ScriptableFramework.ReferenceList-1.html#ScriptableFramework_ReferenceList_1_ForAssetReferencingOnly
+  commentId: P:ScriptableFramework.ReferenceList`1.ForAssetReferencingOnly
+  fullName: ScriptableFramework.ReferenceList<T>.ForAssetReferencingOnly
+  fullName.vb: ScriptableFramework.ReferenceList(Of T).ForAssetReferencingOnly
+  nameWithType: ReferenceList<T>.ForAssetReferencingOnly
+  nameWithType.vb: ReferenceList(Of T).ForAssetReferencingOnly
+- uid: ScriptableFramework.ReferenceList`1.ForAssetReferencingOnly*
+  name: ForAssetReferencingOnly
+  href: api/ScriptableFramework.ReferenceList-1.html#ScriptableFramework_ReferenceList_1_ForAssetReferencingOnly_
+  commentId: Overload:ScriptableFramework.ReferenceList`1.ForAssetReferencingOnly
+  isSpec: "True"
+  fullName: ScriptableFramework.ReferenceList<T>.ForAssetReferencingOnly
+  fullName.vb: ScriptableFramework.ReferenceList(Of T).ForAssetReferencingOnly
+  nameWithType: ReferenceList<T>.ForAssetReferencingOnly
+  nameWithType.vb: ReferenceList(Of T).ForAssetReferencingOnly
 - uid: ScriptableFramework.ReleaseType
   name: ReleaseType
   href: api/ScriptableFramework.ReleaseType.html
@@ -3958,6 +4130,51 @@ references:
   isSpec: "True"
   fullName: ScriptableFramework.Tests.ReferenceItemTests.ClearData.Reset
   nameWithType: ReferenceItemTests.ClearData.Reset
+- uid: ScriptableFramework.Tests.ReferenceItemTests.ClearWithForAssetReferencingOnly
+  name: ReferenceItemTests.ClearWithForAssetReferencingOnly
+  href: api/ScriptableFramework.Tests.ReferenceItemTests.ClearWithForAssetReferencingOnly.html
+  commentId: T:ScriptableFramework.Tests.ReferenceItemTests.ClearWithForAssetReferencingOnly
+  fullName: ScriptableFramework.Tests.ReferenceItemTests.ClearWithForAssetReferencingOnly
+  nameWithType: ReferenceItemTests.ClearWithForAssetReferencingOnly
+- uid: ScriptableFramework.Tests.ReferenceItemTests.ClearWithForAssetReferencingOnly.Clear
+  name: Clear()
+  href: api/ScriptableFramework.Tests.ReferenceItemTests.ClearWithForAssetReferencingOnly.html#ScriptableFramework_Tests_ReferenceItemTests_ClearWithForAssetReferencingOnly_Clear
+  commentId: M:ScriptableFramework.Tests.ReferenceItemTests.ClearWithForAssetReferencingOnly.Clear
+  fullName: ScriptableFramework.Tests.ReferenceItemTests.ClearWithForAssetReferencingOnly.Clear()
+  nameWithType: ReferenceItemTests.ClearWithForAssetReferencingOnly.Clear()
+- uid: ScriptableFramework.Tests.ReferenceItemTests.ClearWithForAssetReferencingOnly.Clear*
+  name: Clear
+  href: api/ScriptableFramework.Tests.ReferenceItemTests.ClearWithForAssetReferencingOnly.html#ScriptableFramework_Tests_ReferenceItemTests_ClearWithForAssetReferencingOnly_Clear_
+  commentId: Overload:ScriptableFramework.Tests.ReferenceItemTests.ClearWithForAssetReferencingOnly.Clear
+  isSpec: "True"
+  fullName: ScriptableFramework.Tests.ReferenceItemTests.ClearWithForAssetReferencingOnly.Clear
+  nameWithType: ReferenceItemTests.ClearWithForAssetReferencingOnly.Clear
+- uid: ScriptableFramework.Tests.ReferenceItemTests.ClearWithForAssetReferencingOnly.CreateGameObjectList
+  name: CreateGameObjectList()
+  href: api/ScriptableFramework.Tests.ReferenceItemTests.ClearWithForAssetReferencingOnly.html#ScriptableFramework_Tests_ReferenceItemTests_ClearWithForAssetReferencingOnly_CreateGameObjectList
+  commentId: M:ScriptableFramework.Tests.ReferenceItemTests.ClearWithForAssetReferencingOnly.CreateGameObjectList
+  fullName: ScriptableFramework.Tests.ReferenceItemTests.ClearWithForAssetReferencingOnly.CreateGameObjectList()
+  nameWithType: ReferenceItemTests.ClearWithForAssetReferencingOnly.CreateGameObjectList()
+- uid: ScriptableFramework.Tests.ReferenceItemTests.ClearWithForAssetReferencingOnly.CreateGameObjectList*
+  name: CreateGameObjectList
+  href: api/ScriptableFramework.Tests.ReferenceItemTests.ClearWithForAssetReferencingOnly.html#ScriptableFramework_Tests_ReferenceItemTests_ClearWithForAssetReferencingOnly_CreateGameObjectList_
+  commentId: Overload:ScriptableFramework.Tests.ReferenceItemTests.ClearWithForAssetReferencingOnly.CreateGameObjectList
+  isSpec: "True"
+  fullName: ScriptableFramework.Tests.ReferenceItemTests.ClearWithForAssetReferencingOnly.CreateGameObjectList
+  nameWithType: ReferenceItemTests.ClearWithForAssetReferencingOnly.CreateGameObjectList
+- uid: ScriptableFramework.Tests.ReferenceItemTests.ClearWithForAssetReferencingOnly.Reset
+  name: Reset()
+  href: api/ScriptableFramework.Tests.ReferenceItemTests.ClearWithForAssetReferencingOnly.html#ScriptableFramework_Tests_ReferenceItemTests_ClearWithForAssetReferencingOnly_Reset
+  commentId: M:ScriptableFramework.Tests.ReferenceItemTests.ClearWithForAssetReferencingOnly.Reset
+  fullName: ScriptableFramework.Tests.ReferenceItemTests.ClearWithForAssetReferencingOnly.Reset()
+  nameWithType: ReferenceItemTests.ClearWithForAssetReferencingOnly.Reset()
+- uid: ScriptableFramework.Tests.ReferenceItemTests.ClearWithForAssetReferencingOnly.Reset*
+  name: Reset
+  href: api/ScriptableFramework.Tests.ReferenceItemTests.ClearWithForAssetReferencingOnly.html#ScriptableFramework_Tests_ReferenceItemTests_ClearWithForAssetReferencingOnly_Reset_
+  commentId: Overload:ScriptableFramework.Tests.ReferenceItemTests.ClearWithForAssetReferencingOnly.Reset
+  isSpec: "True"
+  fullName: ScriptableFramework.Tests.ReferenceItemTests.ClearWithForAssetReferencingOnly.Reset
+  nameWithType: ReferenceItemTests.ClearWithForAssetReferencingOnly.Reset
 - uid: ScriptableFramework.Tests.ReferenceListTests
   name: ReferenceListTests
   href: api/ScriptableFramework.Tests.ReferenceListTests.html
@@ -4009,6 +4226,51 @@ references:
   isSpec: "True"
   fullName: ScriptableFramework.Tests.ReferenceListTests.ClearData.Reset
   nameWithType: ReferenceListTests.ClearData.Reset
+- uid: ScriptableFramework.Tests.ReferenceListTests.ClearWithForAssetReferencingOnly
+  name: ReferenceListTests.ClearWithForAssetReferencingOnly
+  href: api/ScriptableFramework.Tests.ReferenceListTests.ClearWithForAssetReferencingOnly.html
+  commentId: T:ScriptableFramework.Tests.ReferenceListTests.ClearWithForAssetReferencingOnly
+  fullName: ScriptableFramework.Tests.ReferenceListTests.ClearWithForAssetReferencingOnly
+  nameWithType: ReferenceListTests.ClearWithForAssetReferencingOnly
+- uid: ScriptableFramework.Tests.ReferenceListTests.ClearWithForAssetReferencingOnly.Clear
+  name: Clear()
+  href: api/ScriptableFramework.Tests.ReferenceListTests.ClearWithForAssetReferencingOnly.html#ScriptableFramework_Tests_ReferenceListTests_ClearWithForAssetReferencingOnly_Clear
+  commentId: M:ScriptableFramework.Tests.ReferenceListTests.ClearWithForAssetReferencingOnly.Clear
+  fullName: ScriptableFramework.Tests.ReferenceListTests.ClearWithForAssetReferencingOnly.Clear()
+  nameWithType: ReferenceListTests.ClearWithForAssetReferencingOnly.Clear()
+- uid: ScriptableFramework.Tests.ReferenceListTests.ClearWithForAssetReferencingOnly.Clear*
+  name: Clear
+  href: api/ScriptableFramework.Tests.ReferenceListTests.ClearWithForAssetReferencingOnly.html#ScriptableFramework_Tests_ReferenceListTests_ClearWithForAssetReferencingOnly_Clear_
+  commentId: Overload:ScriptableFramework.Tests.ReferenceListTests.ClearWithForAssetReferencingOnly.Clear
+  isSpec: "True"
+  fullName: ScriptableFramework.Tests.ReferenceListTests.ClearWithForAssetReferencingOnly.Clear
+  nameWithType: ReferenceListTests.ClearWithForAssetReferencingOnly.Clear
+- uid: ScriptableFramework.Tests.ReferenceListTests.ClearWithForAssetReferencingOnly.CreateGameObjectList
+  name: CreateGameObjectList()
+  href: api/ScriptableFramework.Tests.ReferenceListTests.ClearWithForAssetReferencingOnly.html#ScriptableFramework_Tests_ReferenceListTests_ClearWithForAssetReferencingOnly_CreateGameObjectList
+  commentId: M:ScriptableFramework.Tests.ReferenceListTests.ClearWithForAssetReferencingOnly.CreateGameObjectList
+  fullName: ScriptableFramework.Tests.ReferenceListTests.ClearWithForAssetReferencingOnly.CreateGameObjectList()
+  nameWithType: ReferenceListTests.ClearWithForAssetReferencingOnly.CreateGameObjectList()
+- uid: ScriptableFramework.Tests.ReferenceListTests.ClearWithForAssetReferencingOnly.CreateGameObjectList*
+  name: CreateGameObjectList
+  href: api/ScriptableFramework.Tests.ReferenceListTests.ClearWithForAssetReferencingOnly.html#ScriptableFramework_Tests_ReferenceListTests_ClearWithForAssetReferencingOnly_CreateGameObjectList_
+  commentId: Overload:ScriptableFramework.Tests.ReferenceListTests.ClearWithForAssetReferencingOnly.CreateGameObjectList
+  isSpec: "True"
+  fullName: ScriptableFramework.Tests.ReferenceListTests.ClearWithForAssetReferencingOnly.CreateGameObjectList
+  nameWithType: ReferenceListTests.ClearWithForAssetReferencingOnly.CreateGameObjectList
+- uid: ScriptableFramework.Tests.ReferenceListTests.ClearWithForAssetReferencingOnly.Reset
+  name: Reset()
+  href: api/ScriptableFramework.Tests.ReferenceListTests.ClearWithForAssetReferencingOnly.html#ScriptableFramework_Tests_ReferenceListTests_ClearWithForAssetReferencingOnly_Reset
+  commentId: M:ScriptableFramework.Tests.ReferenceListTests.ClearWithForAssetReferencingOnly.Reset
+  fullName: ScriptableFramework.Tests.ReferenceListTests.ClearWithForAssetReferencingOnly.Reset()
+  nameWithType: ReferenceListTests.ClearWithForAssetReferencingOnly.Reset()
+- uid: ScriptableFramework.Tests.ReferenceListTests.ClearWithForAssetReferencingOnly.Reset*
+  name: Reset
+  href: api/ScriptableFramework.Tests.ReferenceListTests.ClearWithForAssetReferencingOnly.html#ScriptableFramework_Tests_ReferenceListTests_ClearWithForAssetReferencingOnly_Reset_
+  commentId: Overload:ScriptableFramework.Tests.ReferenceListTests.ClearWithForAssetReferencingOnly.Reset
+  isSpec: "True"
+  fullName: ScriptableFramework.Tests.ReferenceListTests.ClearWithForAssetReferencingOnly.Reset
+  nameWithType: ReferenceListTests.ClearWithForAssetReferencingOnly.Reset
 - uid: ScriptableFramework.Tests.StateMachineTests
   name: StateMachineTests
   href: api/ScriptableFramework.Tests.StateMachineTests.html
@@ -5095,14 +5357,31 @@ references:
   fullName.vb: ScriptableFramework.ValueItem(Of T).Reset
   nameWithType: ValueItem<T>.Reset
   nameWithType.vb: ValueItem(Of T).Reset
-- uid: ScriptableFramework.ValueItem`1.useCustomDefaultValue
-  name: useCustomDefaultValue
-  href: api/ScriptableFramework.ValueItem-1.html#ScriptableFramework_ValueItem_1_useCustomDefaultValue
-  commentId: F:ScriptableFramework.ValueItem`1.useCustomDefaultValue
-  fullName: ScriptableFramework.ValueItem<T>.useCustomDefaultValue
-  fullName.vb: ScriptableFramework.ValueItem(Of T).useCustomDefaultValue
-  nameWithType: ValueItem<T>.useCustomDefaultValue
-  nameWithType.vb: ValueItem(Of T).useCustomDefaultValue
+- uid: ScriptableFramework.ValueItem`1.useCustomDefault
+  name: useCustomDefault
+  href: api/ScriptableFramework.ValueItem-1.html#ScriptableFramework_ValueItem_1_useCustomDefault
+  commentId: F:ScriptableFramework.ValueItem`1.useCustomDefault
+  fullName: ScriptableFramework.ValueItem<T>.useCustomDefault
+  fullName.vb: ScriptableFramework.ValueItem(Of T).useCustomDefault
+  nameWithType: ValueItem<T>.useCustomDefault
+  nameWithType.vb: ValueItem(Of T).useCustomDefault
+- uid: ScriptableFramework.ValueItem`1.UseCustomDefault
+  name: UseCustomDefault
+  href: api/ScriptableFramework.ValueItem-1.html#ScriptableFramework_ValueItem_1_UseCustomDefault
+  commentId: P:ScriptableFramework.ValueItem`1.UseCustomDefault
+  fullName: ScriptableFramework.ValueItem<T>.UseCustomDefault
+  fullName.vb: ScriptableFramework.ValueItem(Of T).UseCustomDefault
+  nameWithType: ValueItem<T>.UseCustomDefault
+  nameWithType.vb: ValueItem(Of T).UseCustomDefault
+- uid: ScriptableFramework.ValueItem`1.UseCustomDefault*
+  name: UseCustomDefault
+  href: api/ScriptableFramework.ValueItem-1.html#ScriptableFramework_ValueItem_1_UseCustomDefault_
+  commentId: Overload:ScriptableFramework.ValueItem`1.UseCustomDefault
+  isSpec: "True"
+  fullName: ScriptableFramework.ValueItem<T>.UseCustomDefault
+  fullName.vb: ScriptableFramework.ValueItem(Of T).UseCustomDefault
+  nameWithType: ValueItem<T>.UseCustomDefault
+  nameWithType.vb: ValueItem(Of T).UseCustomDefault
 - uid: ScriptableFramework.ValueItem`1.value
   name: value
   href: api/ScriptableFramework.ValueItem-1.html#ScriptableFramework_ValueItem_1_value
@@ -5179,14 +5458,31 @@ references:
   fullName.vb: ScriptableFramework.ValueList(Of T).ToNativeArray
   nameWithType: ValueList<T>.ToNativeArray
   nameWithType.vb: ValueList(Of T).ToNativeArray
-- uid: ScriptableFramework.ValueList`1.useCustomDefaultValues
-  name: useCustomDefaultValues
-  href: api/ScriptableFramework.ValueList-1.html#ScriptableFramework_ValueList_1_useCustomDefaultValues
-  commentId: F:ScriptableFramework.ValueList`1.useCustomDefaultValues
-  fullName: ScriptableFramework.ValueList<T>.useCustomDefaultValues
-  fullName.vb: ScriptableFramework.ValueList(Of T).useCustomDefaultValues
-  nameWithType: ValueList<T>.useCustomDefaultValues
-  nameWithType.vb: ValueList(Of T).useCustomDefaultValues
+- uid: ScriptableFramework.ValueList`1.useCustomDefault
+  name: useCustomDefault
+  href: api/ScriptableFramework.ValueList-1.html#ScriptableFramework_ValueList_1_useCustomDefault
+  commentId: F:ScriptableFramework.ValueList`1.useCustomDefault
+  fullName: ScriptableFramework.ValueList<T>.useCustomDefault
+  fullName.vb: ScriptableFramework.ValueList(Of T).useCustomDefault
+  nameWithType: ValueList<T>.useCustomDefault
+  nameWithType.vb: ValueList(Of T).useCustomDefault
+- uid: ScriptableFramework.ValueList`1.UseCustomDefault
+  name: UseCustomDefault
+  href: api/ScriptableFramework.ValueList-1.html#ScriptableFramework_ValueList_1_UseCustomDefault
+  commentId: P:ScriptableFramework.ValueList`1.UseCustomDefault
+  fullName: ScriptableFramework.ValueList<T>.UseCustomDefault
+  fullName.vb: ScriptableFramework.ValueList(Of T).UseCustomDefault
+  nameWithType: ValueList<T>.UseCustomDefault
+  nameWithType.vb: ValueList(Of T).UseCustomDefault
+- uid: ScriptableFramework.ValueList`1.UseCustomDefault*
+  name: UseCustomDefault
+  href: api/ScriptableFramework.ValueList-1.html#ScriptableFramework_ValueList_1_UseCustomDefault_
+  commentId: Overload:ScriptableFramework.ValueList`1.UseCustomDefault
+  isSpec: "True"
+  fullName: ScriptableFramework.ValueList<T>.UseCustomDefault
+  fullName.vb: ScriptableFramework.ValueList(Of T).UseCustomDefault
+  nameWithType: ValueList<T>.UseCustomDefault
+  nameWithType.vb: ValueList(Of T).UseCustomDefault
 - uid: ScriptableFramework.Vector3Event
   name: Vector3Event
   href: api/ScriptableFramework.Vector3Event.html

@@ -87,6 +87,18 @@
                         
                         <ul class="nav level2">
                           <li class="">
+                            <a href="ScriptableFramework.AnimatorList.html" title="AnimatorList" class="">AnimatorList</a>
+                          </li>
+                          <li class="">
+                            <a href="ScriptableFramework.AnimatorListPopulator.html" title="AnimatorListPopulator" class="">AnimatorListPopulator</a>
+                          </li>
+                          <li class="">
+                            <a href="ScriptableFramework.AnimatorReference.html" title="AnimatorReference" class="">AnimatorReference</a>
+                          </li>
+                          <li class="">
+                            <a href="ScriptableFramework.AnimatorReferencePopulator.html" title="AnimatorReferencePopulator" class="">AnimatorReferencePopulator</a>
+                          </li>
+                          <li class="">
                             <a href="ScriptableFramework.AppEvent.html" title="AppEvent" class="">AppEvent</a>
                           </li>
                           <li class="">
@@ -202,6 +214,12 @@
                           </li>
                           <li class="">
                             <a href="ScriptableFramework.IntValue.html" title="IntValue" class="">IntValue</a>
+                          </li>
+                          <li class="">
+                            <a href="ScriptableFramework.IReferenceContainer.html" title="IReferenceContainer" class="">IReferenceContainer</a>
+                          </li>
+                          <li class="">
+                            <a href="ScriptableFramework.IValueContainer.html" title="IValueContainer" class="">IValueContainer</a>
                           </li>
                           <li class="">
                             <a href="ScriptableFramework.MeshRendererList.html" title="MeshRendererList" class="">MeshRendererList</a>
@@ -432,10 +450,16 @@
                             <a href="ScriptableFramework.Tests.ReferenceItemTests.ClearData.html" title="ReferenceItemTests.ClearData" class="">ReferenceItemTests.ClearData</a>
                           </li>
                           <li class="">
+                            <a href="ScriptableFramework.Tests.ReferenceItemTests.ClearWithForAssetReferencingOnly.html" title="ReferenceItemTests.ClearWithForAssetReferencingOnly" class="">ReferenceItemTests.ClearWithForAssetReferencingOnly</a>
+                          </li>
+                          <li class="">
                             <a href="ScriptableFramework.Tests.ReferenceListTests.html" title="ReferenceListTests" class="">ReferenceListTests</a>
                           </li>
                           <li class="">
                             <a href="ScriptableFramework.Tests.ReferenceListTests.ClearData.html" title="ReferenceListTests.ClearData" class="">ReferenceListTests.ClearData</a>
+                          </li>
+                          <li class="">
+                            <a href="ScriptableFramework.Tests.ReferenceListTests.ClearWithForAssetReferencingOnly.html" title="ReferenceListTests.ClearWithForAssetReferencingOnly" class="">ReferenceListTests.ClearWithForAssetReferencingOnly</a>
                           </li>
                           <li class="">
                             <a href="ScriptableFramework.Tests.StateMachineTests.html" title="StateMachineTests" class="">StateMachineTests</a>
@@ -504,9 +528,14 @@
     <div class="level1"><a class="xref" href="ScriptableFramework.RuntimeObject.html">RuntimeObject</a></div>
     <div class="level2"><a class="xref" href="ScriptableFramework.RuntimeList-1.html">RuntimeList</a>&lt;T&gt;</div>
     <div class="level3"><span class="xref">ReferenceList&lt;T&gt;</span></div>
+      <div class="level4"><a class="xref" href="ScriptableFramework.AnimatorList.html">AnimatorList</a></div>
       <div class="level4"><a class="xref" href="ScriptableFramework.GameObjectList.html">GameObjectList</a></div>
       <div class="level4"><a class="xref" href="ScriptableFramework.MeshRendererList.html">MeshRendererList</a></div>
       <div class="level4"><a class="xref" href="ScriptableFramework.TransformList.html">TransformList</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="ScriptableFramework.IReferenceContainer.html">IReferenceContainer</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -572,7 +601,7 @@
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="ScriptableFramework_ReferenceList_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class ReferenceList&lt;T&gt; : RuntimeList&lt;T&gt;, IList&lt;T&gt; where T : class</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class ReferenceList&lt;T&gt; : RuntimeList&lt;T&gt;, IList&lt;T&gt;, IReferenceContainer where T : class</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -602,9 +631,38 @@ reference to an object in a scene.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool forAssetReferencingOnly</code></pre>
+    <pre><code class="lang-csharp hljs">protected bool forAssetReferencingOnly</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="ScriptableFramework_ReferenceList_1_ForAssetReferencingOnly_" data-uid="ScriptableFramework.ReferenceList`1.ForAssetReferencingOnly*"></a>
+  <h4 id="ScriptableFramework_ReferenceList_1_ForAssetReferencingOnly" data-uid="ScriptableFramework.ReferenceList`1.ForAssetReferencingOnly">ForAssetReferencingOnly</h4>
+  <div class="markdown level1 summary"><p>Toggle this on to ensure that the object ignores all calls for either clearing or reseting its
+reference(s).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ForAssetReferencingOnly { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -634,6 +692,10 @@ reference to an object in a scene.</p>
   </div>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">ScriptableFramework.RuntimeList&lt;T&gt;.Clear()</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="ScriptableFramework.IReferenceContainer.html">IReferenceContainer</a>
+  </div>
 </article>
           </div>
           

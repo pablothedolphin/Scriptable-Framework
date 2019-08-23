@@ -28,26 +28,24 @@ namespace ScriptableFramework
 		/// </summary>
 		/// <param name="newSelectionIndex">Index of the state to be active.</param>
 		/// <param name="onlyThisObject">If true, the update for all other objects will be skipped.</param>
-		/// <returns>Whether or not the operation succeeded.</returns>
-		public bool UpdateState (int newSelectionIndex)
+		public void UpdateState (int newSelectionIndex)
 		{
-			if (!CheckListBeforeUpdate ()) return false;
+			if (!CheckListBeforeUpdate ()) return;
 
-			if (!CheckSelectionIndexBeforeUpdate (newSelectionIndex)) return false;
+			if (!CheckSelectionIndexBeforeUpdate (newSelectionIndex)) return;
 
-			return ApplyState (newSelectionIndex);
+			ApplyState (newSelectionIndex);
 		}
 
 		/// <summary>
 		/// Applies the same state to all objects in the current list.
 		/// </summary>
 		/// <param name="stateForAll">The new state for all contained object.</param>
-		/// <returns>Whether or not the operation succeeded.</returns>
-		public bool UpdateState (bool stateForAll)
+		public void UpdateState (bool stateForAll)
 		{
-			if (!CheckListBeforeUpdate ()) return false;
+			if (!CheckListBeforeUpdate ()) return;
 
-			return ApplyState (stateForAll);
+			ApplyState (stateForAll);
 		}
 
 		/// <summary>
@@ -55,14 +53,13 @@ namespace ScriptableFramework
 		/// </summary>
 		/// <param name="newSelectionIndex">The index of the object to update.</param>
 		/// <param name="stateAtThisObject">The state to provide that object with.</param>
-		/// <returns>Whether or not the operation succeeded.</returns>
-		public bool UpdateState (int newSelectionIndex, bool stateAtThisObject)
+		public void UpdateState (int newSelectionIndex, bool stateAtThisObject)
 		{
-			if (!CheckListBeforeUpdate ()) return false;
+			if (!CheckListBeforeUpdate ()) return;
 
-			if (!CheckSelectionIndexBeforeUpdate (newSelectionIndex)) return false;
+			if (!CheckSelectionIndexBeforeUpdate (newSelectionIndex)) return;
 
-			return ApplyState (newSelectionIndex, stateAtThisObject);
+			ApplyState (newSelectionIndex, stateAtThisObject);
 		}
 
 		/// <summary>
@@ -72,12 +69,11 @@ namespace ScriptableFramework
 		/// <param name="startIndex">Where to start applying your state (inclusive).</param>
 		/// <param name="length">How many objects to affect.</param>
 		/// <param name="stateToApply">The state to apply within your given range.</param>
-		/// <returns>Whether or not the operation succeeded.</returns>
-		public bool UpdateState (int startIndex, int length, bool stateToApply)
+		public void UpdateState (int startIndex, int length, bool stateToApply)
 		{
-			if (!CheckListBeforeUpdate ()) return false;
+			if (!CheckListBeforeUpdate ()) return;
 
-			return ApplyState (startIndex, length, stateToApply);
+			ApplyState (startIndex, length, stateToApply);
 		}
 
 		/// <summary>
@@ -85,23 +81,20 @@ namespace ScriptableFramework
 		/// </summary>
 		/// <param name="newSelectionIndex">Index of the state to be active.</param>
 		/// <param name="onlyThisObject">If true, the update for all other objects will be skipped.</param>
-		/// <returns>Whether or not the operation succeeded.</returns>
-		protected abstract bool ApplyState (int newSelectionIndex);
+		protected abstract void ApplyState (int newSelectionIndex);
 
 		/// <summary>
 		/// Actually runs the loop which sets the state of all objects in the list.
 		/// </summary>
 		/// <param name="stateForAll">State to apply for all.</param>
-		/// <returns>Whether or not the operation succeeded.</returns>
-		protected abstract bool ApplyState (bool stateForAll);
+		protected abstract void ApplyState (bool stateForAll);
 
 		/// <summary>
 		/// Actually applies the new state to the selected object.
 		/// </summary>
 		/// <param name="newSelectionIndex">The index of the object to update.</param>
 		/// <param name="stateAtThisObject">The state to provide that object with.</param>
-		/// <returns>Whether or not the operation succeeded.</returns>
-		protected abstract bool ApplyState (int newSelectionIndex, bool stateAtThisObject);
+		protected abstract void ApplyState (int newSelectionIndex, bool stateAtThisObject);
 
 		/// <summary>
 		/// Actually runs the loop which applies your given range of objects and the rest with another.
@@ -109,8 +102,7 @@ namespace ScriptableFramework
 		/// <param name="startIndex">Where to start applying your state (inclusive).</param>
 		/// <param name="length">How many objects to affect.</param>
 		/// <param name="stateToApply">The state to apply within your given range.</param>
-		/// <returns>Whether or not the operation succeeded.</returns>
-		protected abstract bool ApplyState (int startIndex, int length, bool stateToApply);
+		protected abstract void ApplyState (int startIndex, int length, bool stateToApply);
 
 		/// <summary>
 		/// Checks if the list is null. Since the list can be a varying type, defining this as 

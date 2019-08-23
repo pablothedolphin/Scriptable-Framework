@@ -197,7 +197,7 @@
 <p><a href="https://semver.org/">Semantic Versioning</a> is a really good practice you should stick to in software development. It helps you keep track of progress, identify previous versions and understand the differences between them, convey progress to the client and more. But when trying to add a version number to multiple spots in your interface, it can become tedious updating several text objects sometimes across several scenes.</p>
 <p><code>AppVersion</code> is a type of scriptable object in Scripbtable Framework that can make it significantly easier to convey your current version anywhere in your UI. They can be created under &quot;Create &gt; App Version&quot;.</p>
 <p><img src="../images/versioningYourApps1.png" alt="Figure1"></p>
-<p><strong>Note</strong>: You only ever need one instance of this object per project.</p>
+<p><strong>Note</strong>: You only ever need one instance of an <code>AppVersion</code> per project.</p>
 <p>What makes this object special is that you can set your current version number in the inspector and then in your code, just assign the whole object into the text field of your UI. An <code>AppVersion</code> <strong>implicitly</strong> casts into a string of the current version number. Here's a demo of how that works.</p>
 <pre><code class="lang-cs">using UnityEngine;
 using UnityEngine.UI;
@@ -254,6 +254,9 @@ public class AppVersionDemo : MonoBehaviour
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/pablothedolphin/Scriptable-Framework/blob/master/docfx/articles/versioningYourApps.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

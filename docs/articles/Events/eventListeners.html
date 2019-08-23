@@ -211,6 +211,9 @@
 <p>In the inspector you will find, in addition to the things found on an AppEventListener, a &quot;Value For Manual Trigger&quot;. You can adjust this value so that when pressing the &quot;Trigger this response&quot; button, your specified value will be what's passed to the listeners. The value for manual trigger is only ever used for this purposed and has no other effect on the listener itself.</p>
 <h2 id="organising-listeners-in-your-scene">Organising Listeners in Your Scene</h2>
 <p>When a single GameObject needs to respond to lots of different events, it can get quite messy to attach all your listener components for each different event on the same object. To avoid this, You can simply attach your listener components to some other empty GameObject and name it something like &quot;Listeners for X&quot;.</p>
+<h2 id="limitations">Limitations</h2>
+<p>Listenner objects use a <code>UnityEvent</code> to store its responses. You may assign responses in a specific order but unfortunately, there is no guaruntee of the execution order of many responses on a single listener. The same is true for the execution order of many listeners from one event. If you require a specific order of execution with an event, we suggest splitting your event into multple events you can raise one after another through code.</p>
+<p>The main limitation with all event objects in Scriptable Framework is that you should avoid raising them on Awake. This is because listenners register themselves in OnEnable (with an execution order set to -1000) which runs after Awake. The safest time to raise an event would in your own OnEnable method (with execution order higher than -1000) or on Start.</p>
 </article>
           </div>
           
@@ -218,6 +221,9 @@
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/pablothedolphin/Scriptable-Framework/blob/master/docfx/articles/Events/eventListeners.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

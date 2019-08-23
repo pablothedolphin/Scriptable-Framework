@@ -194,7 +194,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="using-state-machine-controllers">Using State Machine Controllers</h1>
 
-<p>The API for using a StateMachineController is pretty much identical to its counter part. You still have access to an <code>UpdateState</code> method but this time, because it controls a list of StateMachines, your StateMachineController will call <code>StateMachine.UpdateState (true)</code> for the StateMachines you are making &quot;active&quot; and pass false for the others.</p>
+<p>The API for using a StateMachineController is pretty much identical to its counter part. You still have access to an <code>UpdateState</code> method but this time, because it controls a list of <code>StateMachineBase</code>s, your StateMachineController will call <code>StateMachine.UpdateState (true)</code> for the StateMachines you are making &quot;active&quot; and pass false for the others.</p>
 <p><strong>NOTE</strong>: StateMachineControllers also require an instance of a <code>StateMachineReset</code> in the scene to help with initialisation in each of your scenes. Though, even if you're using both StateMachines and StateMachineControllers, just one instance of a reset object will be enough.</p>
 </article>
           </div>
@@ -203,6 +203,9 @@
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/pablothedolphin/Scriptable-Framework/blob/master/docfx/articles/State Machines/usingStateMachineControllers.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

@@ -208,7 +208,7 @@
 <p><img src="../../images/eventObjects2.png" alt="Figure2"></p>
 <p>In the inspector you will find, in addition to the things found on an AppEvent, a &quot;Value For Manual Trigger&quot;. You can adjust this value so that when pressing the &quot;Raise this Event&quot; button, your specified value will be what's passed to the listeners. The value for manual trigger is only ever used for this purposed and has no other effect on the event itself.</p>
 <h2 id="limitations">Limitations</h2>
-<p>The main limitation with all event objects in Scriptable Framework is that you should avoid raising them on Awake. This is because listenners register themselves in OnEnable which runs after Awake. The safest time to raise an event would on Start.</p>
+<p>The main limitation with all event objects in Scriptable Framework is that you should avoid raising them on Awake. This is because listenners register themselves in OnEnable (with an execution order set to -1000) which runs after Awake. The safest time to raise an event would in your own OnEnable method (with execution order higher than -1000) or on Start.</p>
 </article>
           </div>
           
@@ -216,6 +216,9 @@
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/pablothedolphin/Scriptable-Framework/blob/master/docfx/articles/Events/eventObjects.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

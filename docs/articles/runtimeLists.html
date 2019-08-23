@@ -197,7 +197,7 @@
 <p>A RuntimeList is a type of RuntimeObject designed to store multiple <strong>references</strong> or <strong>values</strong> that are meant to be accessed and shared accross more than one GameObject in a scene or across more than one scene.</p>
 <p>These objects extend upon the <code>List&lt;T&gt;</code> class in C# and can act as a 1 to 1 replacement for anything in your existing code already using a list. This includes everything from getting the total number of elements with <code>RuntimeList.Count</code> to accessing a specific element with <code>RuntimeList[index]</code>.</p>
 <p>RuntimeLists are heavily influenced by the differences between reference types and value types. You can learn more about reference and value types in C# <a href="https://docs.microsoft.com/en-us/dotnet/visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types">here</a>.</p>
-<p><strong>NOTE:</strong> RuntimeLists will globally reset themselves to their default state on application start/when you hit the play button. However, this does not happen when changing scenes during runtime.</p>
+<p><strong>NOTE:</strong> RuntimeLists will globally reset themselves to their default state on application start/when you hit the play button. However, this does not happen when changing scenes during runtime. <code>ReferenceList</code>s CAN be an exception to this via a toggle on the object.</p>
 </article>
           </div>
           
@@ -205,6 +205,9 @@
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/pablothedolphin/Scriptable-Framework/blob/master/docfx/articles/runtimeLists.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

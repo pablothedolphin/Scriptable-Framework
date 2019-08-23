@@ -195,8 +195,8 @@
 <h1 id="runtime-items">Runtime Items</h1>
 
 <p>A <code>RuntimeItem</code> is a type of RuntimeObject designed to store a single <strong>reference</strong> or <strong>value</strong> that is meant to be accessed and shared accross more than one GameObject in a scene or across more than one scene.</p>
-<p><code>RuntimeItem</code> are heavily influenced by the differences between <strong>reference</strong> types and <strong>value</strong> types. You can learn more about reference and value types in C# <a href="https://docs.microsoft.com/en-us/dotnet/visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types">here</a>.</p>
-<p><strong>NOTE:</strong> RuntimeItems will globally reset themselves to their default state on application start/when you hit the play button. However, this does not happen when changing scenes during runtime.</p>
+<p><code>RuntimeItem</code>s are heavily influenced by the differences between <strong>reference</strong> types and <strong>value</strong> types. You can learn more about reference and value types in C# <a href="https://docs.microsoft.com/en-us/dotnet/visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types">here</a>.</p>
+<p><strong>NOTE:</strong> RuntimeItems will globally reset themselves to their default state on application start/when you hit the play button. However, this does not happen when changing scenes during runtime. <code>ReferenceItem</code>s CAN be an exception to this via a toggle on the object.</p>
 </article>
           </div>
           
@@ -204,6 +204,9 @@
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/pablothedolphin/Scriptable-Framework/blob/master/docfx/articles/runtimeItems.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

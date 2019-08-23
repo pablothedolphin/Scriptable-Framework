@@ -87,6 +87,18 @@
                         
                         <ul class="nav level2">
                           <li class="">
+                            <a href="ScriptableFramework.AnimatorList.html" title="AnimatorList" class="">AnimatorList</a>
+                          </li>
+                          <li class="">
+                            <a href="ScriptableFramework.AnimatorListPopulator.html" title="AnimatorListPopulator" class="">AnimatorListPopulator</a>
+                          </li>
+                          <li class="">
+                            <a href="ScriptableFramework.AnimatorReference.html" title="AnimatorReference" class="">AnimatorReference</a>
+                          </li>
+                          <li class="">
+                            <a href="ScriptableFramework.AnimatorReferencePopulator.html" title="AnimatorReferencePopulator" class="">AnimatorReferencePopulator</a>
+                          </li>
+                          <li class="">
                             <a href="ScriptableFramework.AppEvent.html" title="AppEvent" class="">AppEvent</a>
                           </li>
                           <li class="">
@@ -202,6 +214,12 @@
                           </li>
                           <li class="">
                             <a href="ScriptableFramework.IntValue.html" title="IntValue" class="">IntValue</a>
+                          </li>
+                          <li class="">
+                            <a href="ScriptableFramework.IReferenceContainer.html" title="IReferenceContainer" class="">IReferenceContainer</a>
+                          </li>
+                          <li class="">
+                            <a href="ScriptableFramework.IValueContainer.html" title="IValueContainer" class="">IValueContainer</a>
                           </li>
                           <li class="">
                             <a href="ScriptableFramework.MeshRendererList.html" title="MeshRendererList" class="">MeshRendererList</a>
@@ -432,10 +450,16 @@
                             <a href="ScriptableFramework.Tests.ReferenceItemTests.ClearData.html" title="ReferenceItemTests.ClearData" class="">ReferenceItemTests.ClearData</a>
                           </li>
                           <li class="">
+                            <a href="ScriptableFramework.Tests.ReferenceItemTests.ClearWithForAssetReferencingOnly.html" title="ReferenceItemTests.ClearWithForAssetReferencingOnly" class="">ReferenceItemTests.ClearWithForAssetReferencingOnly</a>
+                          </li>
+                          <li class="">
                             <a href="ScriptableFramework.Tests.ReferenceListTests.html" title="ReferenceListTests" class="">ReferenceListTests</a>
                           </li>
                           <li class="">
                             <a href="ScriptableFramework.Tests.ReferenceListTests.ClearData.html" title="ReferenceListTests.ClearData" class="">ReferenceListTests.ClearData</a>
+                          </li>
+                          <li class="">
+                            <a href="ScriptableFramework.Tests.ReferenceListTests.ClearWithForAssetReferencingOnly.html" title="ReferenceListTests.ClearWithForAssetReferencingOnly" class="">ReferenceListTests.ClearWithForAssetReferencingOnly</a>
                           </li>
                           <li class="">
                             <a href="ScriptableFramework.Tests.StateMachineTests.html" title="StateMachineTests" class="">StateMachineTests</a>
@@ -584,7 +608,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected abstract bool ApplyState(bool stateForAll)</code></pre>
+    <pre><code class="lang-csharp hljs">protected abstract void ApplyState(bool stateForAll)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -604,22 +628,6 @@
       </tr>
     </tbody>
   </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>Whether or not the operation succeeded.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   
   
   <a id="ScriptableFramework_StateMachineBase_ApplyState_" data-uid="ScriptableFramework.StateMachineBase.ApplyState*"></a>
@@ -629,7 +637,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected abstract bool ApplyState(int newSelectionIndex)</code></pre>
+    <pre><code class="lang-csharp hljs">protected abstract void ApplyState(int newSelectionIndex)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -649,22 +657,6 @@
       </tr>
     </tbody>
   </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>Whether or not the operation succeeded.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   
   
   <a id="ScriptableFramework_StateMachineBase_ApplyState_" data-uid="ScriptableFramework.StateMachineBase.ApplyState*"></a>
@@ -674,7 +666,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected abstract bool ApplyState(int newSelectionIndex, bool stateAtThisObject)</code></pre>
+    <pre><code class="lang-csharp hljs">protected abstract void ApplyState(int newSelectionIndex, bool stateAtThisObject)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -700,22 +692,6 @@
       </tr>
     </tbody>
   </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>Whether or not the operation succeeded.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   
   
   <a id="ScriptableFramework_StateMachineBase_ApplyState_" data-uid="ScriptableFramework.StateMachineBase.ApplyState*"></a>
@@ -725,7 +701,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected abstract bool ApplyState(int startIndex, int length, bool stateToApply)</code></pre>
+    <pre><code class="lang-csharp hljs">protected abstract void ApplyState(int startIndex, int length, bool stateToApply)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -753,22 +729,6 @@
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">stateToApply</span></td>
         <td><p>The state to apply within your given range.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>Whether or not the operation succeeded.</p>
 </td>
       </tr>
     </tbody>
@@ -901,7 +861,7 @@ an abstract function is needed to help reduce code.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool UpdateState(bool stateForAll)</code></pre>
+    <pre><code class="lang-csharp hljs">public void UpdateState(bool stateForAll)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -921,22 +881,6 @@ an abstract function is needed to help reduce code.</p>
       </tr>
     </tbody>
   </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>Whether or not the operation succeeded.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   
   
   <a id="ScriptableFramework_StateMachineBase_UpdateState_" data-uid="ScriptableFramework.StateMachineBase.UpdateState*"></a>
@@ -946,7 +890,7 @@ an abstract function is needed to help reduce code.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool UpdateState(int newSelectionIndex)</code></pre>
+    <pre><code class="lang-csharp hljs">public void UpdateState(int newSelectionIndex)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -966,22 +910,6 @@ an abstract function is needed to help reduce code.</p>
       </tr>
     </tbody>
   </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>Whether or not the operation succeeded.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   
   
   <a id="ScriptableFramework_StateMachineBase_UpdateState_" data-uid="ScriptableFramework.StateMachineBase.UpdateState*"></a>
@@ -991,7 +919,7 @@ an abstract function is needed to help reduce code.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool UpdateState(int newSelectionIndex, bool stateAtThisObject)</code></pre>
+    <pre><code class="lang-csharp hljs">public void UpdateState(int newSelectionIndex, bool stateAtThisObject)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1017,22 +945,6 @@ an abstract function is needed to help reduce code.</p>
       </tr>
     </tbody>
   </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>Whether or not the operation succeeded.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   
   
   <a id="ScriptableFramework_StateMachineBase_UpdateState_" data-uid="ScriptableFramework.StateMachineBase.UpdateState*"></a>
@@ -1043,7 +955,7 @@ outside of the range.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool UpdateState(int startIndex, int length, bool stateToApply)</code></pre>
+    <pre><code class="lang-csharp hljs">public void UpdateState(int startIndex, int length, bool stateToApply)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1071,22 +983,6 @@ outside of the range.</p>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">stateToApply</span></td>
         <td><p>The state to apply within your given range.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>Whether or not the operation succeeded.</p>
 </td>
       </tr>
     </tbody>
