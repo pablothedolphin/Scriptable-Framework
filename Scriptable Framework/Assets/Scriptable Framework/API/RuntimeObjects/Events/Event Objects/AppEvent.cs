@@ -38,7 +38,7 @@ namespace ScriptableFramework
 			if (ScriptableFrameworkSettings.EditorEventLogging)
 			{
 #endif
-				//System.Diagnostics.StackFrame stackFrame = new System.Diagnostics.StackFrame (1, false);
+				//System.Diagnostics.StackTrace stackTrace = new System.Diagnostics.StackFrame (1, false);
 
 
 				//Debug.Log (string.Format ("[EVENT] '{0}' was raised from {1}.{2} at line {3}", name, Path.GetFileNameWithoutExtension (stackFrame.GetFileName ()), stackFrame.GetMethod ().Name, stackFrame.GetFileLineNumber ()));
