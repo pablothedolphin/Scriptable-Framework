@@ -27,6 +27,20 @@ namespace ScriptableFramework
 		public bool ForAssetReferencingOnly { get => forAssetReferencingOnly; set => forAssetReferencingOnly = value; }
 
 		/// <summary>
+		/// Shorthand for calling <c>Clear ()</c> and then adding a number of null objects. 
+		/// </summary>
+		/// <param name="newCount">The number of null objects to add.</param>
+		public override void Initialise (int newCount)
+		{
+			Clear ();
+
+			for (int i = 0; i < newCount; i++)
+			{
+				Add (null);
+			}
+		}
+
+		/// <summary>
 		/// Empties the current internal list. If marked for asset referencing only, the data will not be cleared.
 		/// </summary>
 		public override void Clear ()

@@ -68,6 +68,12 @@ namespace ScriptableFramework
 		}
 
 		/// <summary>
+		/// Shorthand for calling <c>Clear ()</c> and then adding a number of empty/null objects. 
+		/// </summary>
+		/// <param name="newCount">The number of empty/null objects to add.</param>
+		public abstract void Initialise (int newCount);
+
+		/// <summary>
 		/// If the item exists as an element in this list, remove it and shift the index of the
 		/// elements after it down by one.
 		/// </summary>
