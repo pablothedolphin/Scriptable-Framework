@@ -207,6 +207,10 @@
 <p>Generic events like the FloatEvent can be raised by either calling <code>RaiseEvent (myFloatVariable)</code> or with just <code>RaiseEvent ()</code> which will assume some default value. In the case of a FloatEvent, a 0 would be passed.</p>
 <p><img src="../../images/eventObjects2.png" alt="Figure2"></p>
 <p>In the inspector you will find, in addition to the things found on an AppEvent, a &quot;Value For Manual Trigger&quot;. You can adjust this value so that when pressing the &quot;Raise this Event&quot; button, your specified value will be what's passed to the listeners. The value for manual trigger is only ever used for this purposed and has no other effect on the event itself.</p>
+<h2 id="raiseevent-via-ui-components">RaiseEvent via UI Components</h2>
+<p>Traditionally, a UI component like a button or a dropdown would have an instance of a MonoBehaviour dragged into them so that one of its methods could be assigned for the UI object to invoke. What most people don't know is, you can also do this with ScriptableObjects!</p>
+<p><img src="../../images/eventObjects3.png" alt="Figure3"></p>
+<p>The image above shows an example of how a dropdown component has an IntEvent assigned to its object reference. By doing this, you can call the <code>RaiseFromUI</code> method directly from the UI and not write any code at all for executing events in your scene.</p>
 <h2 id="limitations">Limitations</h2>
 <p>The main limitation with all event objects in Scriptable Framework is that you should avoid raising them on Awake. This is because listenners register themselves in OnEnable (with an execution order set to -1000) which runs after Awake. The safest time to raise an event would in your own OnEnable method (with execution order higher than -1000) or on Start.</p>
 </article>

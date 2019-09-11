@@ -152,6 +152,19 @@ references:
   isSpec: "True"
   fullName: ScriptableFramework.AppEvent.RaiseEvent
   nameWithType: AppEvent.RaiseEvent
+- uid: ScriptableFramework.AppEvent.RaiseFromUI
+  name: RaiseFromUI()
+  href: api/ScriptableFramework.AppEvent.html#ScriptableFramework_AppEvent_RaiseFromUI
+  commentId: M:ScriptableFramework.AppEvent.RaiseFromUI
+  fullName: ScriptableFramework.AppEvent.RaiseFromUI()
+  nameWithType: AppEvent.RaiseFromUI()
+- uid: ScriptableFramework.AppEvent.RaiseFromUI*
+  name: RaiseFromUI
+  href: api/ScriptableFramework.AppEvent.html#ScriptableFramework_AppEvent_RaiseFromUI_
+  commentId: Overload:ScriptableFramework.AppEvent.RaiseFromUI
+  isSpec: "True"
+  fullName: ScriptableFramework.AppEvent.RaiseFromUI
+  nameWithType: AppEvent.RaiseFromUI
 - uid: ScriptableFramework.AppEvent.RegisterListener(ScriptableFramework.AppEventListener)
   name: RegisterListener(AppEventListener)
   href: api/ScriptableFramework.AppEvent.html#ScriptableFramework_AppEvent_RegisterListener_ScriptableFramework_AppEventListener_
@@ -259,6 +272,23 @@ references:
   fullName.vb: ScriptableFramework.AppEvent(Of T).RaiseEvent
   nameWithType: AppEvent<T>.RaiseEvent
   nameWithType.vb: AppEvent(Of T).RaiseEvent
+- uid: ScriptableFramework.AppEvent`1.RaiseFromUI(`0)
+  name: RaiseFromUI(T)
+  href: api/ScriptableFramework.AppEvent-1.html#ScriptableFramework_AppEvent_1_RaiseFromUI__0_
+  commentId: M:ScriptableFramework.AppEvent`1.RaiseFromUI(`0)
+  fullName: ScriptableFramework.AppEvent<T>.RaiseFromUI(T)
+  fullName.vb: ScriptableFramework.AppEvent(Of T).RaiseFromUI(T)
+  nameWithType: AppEvent<T>.RaiseFromUI(T)
+  nameWithType.vb: AppEvent(Of T).RaiseFromUI(T)
+- uid: ScriptableFramework.AppEvent`1.RaiseFromUI*
+  name: RaiseFromUI
+  href: api/ScriptableFramework.AppEvent-1.html#ScriptableFramework_AppEvent_1_RaiseFromUI_
+  commentId: Overload:ScriptableFramework.AppEvent`1.RaiseFromUI
+  isSpec: "True"
+  fullName: ScriptableFramework.AppEvent<T>.RaiseFromUI
+  fullName.vb: ScriptableFramework.AppEvent(Of T).RaiseFromUI
+  nameWithType: AppEvent<T>.RaiseFromUI
+  nameWithType.vb: AppEvent(Of T).RaiseFromUI
 - uid: ScriptableFramework.AppEvent`1.RegisterListener(ScriptableFramework.AppEventListener{`0})
   name: RegisterListener(AppEventListener<T>)
   href: api/ScriptableFramework.AppEvent-1.html#ScriptableFramework_AppEvent_1_RegisterListener_ScriptableFramework_AppEventListener__0__
@@ -1410,6 +1440,41 @@ references:
   isSpec: "True"
   fullName: ScriptableFramework.Dragable.OnEndDrag
   nameWithType: Dragable.OnEndDrag
+- uid: ScriptableFramework.Extensions
+  name: Extensions
+  href: api/ScriptableFramework.Extensions.html
+  commentId: T:ScriptableFramework.Extensions
+  fullName: ScriptableFramework.Extensions
+  nameWithType: Extensions
+- uid: ScriptableFramework.Extensions.DestroyChildren(Transform)
+  name: DestroyChildren(Transform)
+  href: api/ScriptableFramework.Extensions.html#ScriptableFramework_Extensions_DestroyChildren_Transform_
+  commentId: M:ScriptableFramework.Extensions.DestroyChildren(Transform)
+  fullName: ScriptableFramework.Extensions.DestroyChildren(Transform)
+  nameWithType: Extensions.DestroyChildren(Transform)
+- uid: ScriptableFramework.Extensions.DestroyChildren*
+  name: DestroyChildren
+  href: api/ScriptableFramework.Extensions.html#ScriptableFramework_Extensions_DestroyChildren_
+  commentId: Overload:ScriptableFramework.Extensions.DestroyChildren
+  isSpec: "True"
+  fullName: ScriptableFramework.Extensions.DestroyChildren
+  nameWithType: Extensions.DestroyChildren
+- uid: ScriptableFramework.Extensions.GetName*
+  name: GetName
+  href: api/ScriptableFramework.Extensions.html#ScriptableFramework_Extensions_GetName_
+  commentId: Overload:ScriptableFramework.Extensions.GetName
+  isSpec: "True"
+  fullName: ScriptableFramework.Extensions.GetName
+  nameWithType: Extensions.GetName
+- uid: ScriptableFramework.Extensions.GetName``1(``0)
+  name: GetName<T>(T)
+  href: api/ScriptableFramework.Extensions.html#ScriptableFramework_Extensions_GetName__1___0_
+  commentId: M:ScriptableFramework.Extensions.GetName``1(``0)
+  name.vb: GetName(Of T)(T)
+  fullName: ScriptableFramework.Extensions.GetName<T>(T)
+  fullName.vb: ScriptableFramework.Extensions.GetName(Of T)(T)
+  nameWithType: Extensions.GetName<T>(T)
+  nameWithType.vb: Extensions.GetName(Of T)(T)
 - uid: ScriptableFramework.FloatEvent
   name: FloatEvent
   href: api/ScriptableFramework.FloatEvent.html
@@ -1891,6 +1956,23 @@ references:
   fullName.vb: ScriptableFramework.ReferenceList(Of T).ForAssetReferencingOnly
   nameWithType: ReferenceList<T>.ForAssetReferencingOnly
   nameWithType.vb: ReferenceList(Of T).ForAssetReferencingOnly
+- uid: ScriptableFramework.ReferenceList`1.Initialise(System.Int32)
+  name: Initialise(Int32)
+  href: api/ScriptableFramework.ReferenceList-1.html#ScriptableFramework_ReferenceList_1_Initialise_System_Int32_
+  commentId: M:ScriptableFramework.ReferenceList`1.Initialise(System.Int32)
+  fullName: ScriptableFramework.ReferenceList<T>.Initialise(System.Int32)
+  fullName.vb: ScriptableFramework.ReferenceList(Of T).Initialise(System.Int32)
+  nameWithType: ReferenceList<T>.Initialise(Int32)
+  nameWithType.vb: ReferenceList(Of T).Initialise(Int32)
+- uid: ScriptableFramework.ReferenceList`1.Initialise*
+  name: Initialise
+  href: api/ScriptableFramework.ReferenceList-1.html#ScriptableFramework_ReferenceList_1_Initialise_
+  commentId: Overload:ScriptableFramework.ReferenceList`1.Initialise
+  isSpec: "True"
+  fullName: ScriptableFramework.ReferenceList<T>.Initialise
+  fullName.vb: ScriptableFramework.ReferenceList(Of T).Initialise
+  nameWithType: ReferenceList<T>.Initialise
+  nameWithType.vb: ReferenceList(Of T).Initialise
 - uid: ScriptableFramework.ReleaseType
   name: ReleaseType
   href: api/ScriptableFramework.ReleaseType.html
@@ -2120,6 +2202,14 @@ references:
   fullName.vb: ScriptableFramework.RuntimeList(Of T).Initialise(IEnumerable(Of T))
   nameWithType: RuntimeList<T>.Initialise(IEnumerable<T>)
   nameWithType.vb: RuntimeList(Of T).Initialise(IEnumerable(Of T))
+- uid: ScriptableFramework.RuntimeList`1.Initialise(System.Int32)
+  name: Initialise(Int32)
+  href: api/ScriptableFramework.RuntimeList-1.html#ScriptableFramework_RuntimeList_1_Initialise_System_Int32_
+  commentId: M:ScriptableFramework.RuntimeList`1.Initialise(System.Int32)
+  fullName: ScriptableFramework.RuntimeList<T>.Initialise(System.Int32)
+  fullName.vb: ScriptableFramework.RuntimeList(Of T).Initialise(System.Int32)
+  nameWithType: RuntimeList<T>.Initialise(Int32)
+  nameWithType.vb: RuntimeList(Of T).Initialise(Int32)
 - uid: ScriptableFramework.RuntimeList`1.Initialise*
   name: Initialise
   href: api/ScriptableFramework.RuntimeList-1.html#ScriptableFramework_RuntimeList_1_Initialise_
@@ -5424,6 +5514,23 @@ references:
   fullName.vb: ScriptableFramework.ValueList(Of T).customDefaultValues
   nameWithType: ValueList<T>.customDefaultValues
   nameWithType.vb: ValueList(Of T).customDefaultValues
+- uid: ScriptableFramework.ValueList`1.Initialise(System.Int32)
+  name: Initialise(Int32)
+  href: api/ScriptableFramework.ValueList-1.html#ScriptableFramework_ValueList_1_Initialise_System_Int32_
+  commentId: M:ScriptableFramework.ValueList`1.Initialise(System.Int32)
+  fullName: ScriptableFramework.ValueList<T>.Initialise(System.Int32)
+  fullName.vb: ScriptableFramework.ValueList(Of T).Initialise(System.Int32)
+  nameWithType: ValueList<T>.Initialise(Int32)
+  nameWithType.vb: ValueList(Of T).Initialise(Int32)
+- uid: ScriptableFramework.ValueList`1.Initialise*
+  name: Initialise
+  href: api/ScriptableFramework.ValueList-1.html#ScriptableFramework_ValueList_1_Initialise_
+  commentId: Overload:ScriptableFramework.ValueList`1.Initialise
+  isSpec: "True"
+  fullName: ScriptableFramework.ValueList<T>.Initialise
+  fullName.vb: ScriptableFramework.ValueList(Of T).Initialise
+  nameWithType: ValueList<T>.Initialise
+  nameWithType.vb: ValueList(Of T).Initialise
 - uid: ScriptableFramework.ValueList`1.Reset
   name: Reset()
   href: api/ScriptableFramework.ValueList-1.html#ScriptableFramework_ValueList_1_Reset

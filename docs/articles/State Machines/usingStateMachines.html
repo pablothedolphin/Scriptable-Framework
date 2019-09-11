@@ -199,7 +199,7 @@
 <p>Because of the execution order of what goes on with Scriptable Framework behind the scenes, you will usually need a GameObject with a <code>StateMachineReset</code> component on it for any scenes that make use of StateMachines. This component needs absolutely no extra references or values set for it. It just works automatically once placed in the scene. You can compare needing a StateMachineReset in your scene to let StateMachines work to how Unity's Canvases need an EventSystem object in the scene to allow things to work properly. It's just a small thing you need to keep in mind.</p>
 <p><img src="../../images/stateMachines2.png" alt="Figure2"></p>
 <p><strong>NOTE</strong>: It is much quicker to use a populator to set the references in your GameObjectList automatically rather than to write your own code for it. See the Populators manual for further details.</p>
-<h2 id="statemachines-via-ui-components">StateMachines via UI Components</h2>
+<h2 id="updatestate-via-ui-components">UpdateState via UI Components</h2>
 <p>Traditionally, a UI component like a button or a dropdown would have an instance of a MonoBehaviour dragged into them so that one of its methods could be assigned for the UI object to invoke. What most people don't know is, you can also do this with ScriptableObjects!</p>
 <p><img src="../../images/stateMachines3.png" alt="Figure3"></p>
 <p>The image above shows an example of how a dropdown component has a StateMachine assigned to its object reference. By doing this, you can call the <code>UpdateState</code> method directly from the UI and not write any code at all for controlling objects in your scene.</p>
