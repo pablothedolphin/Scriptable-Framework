@@ -10,7 +10,7 @@ Because of the execution order of what goes on with Scriptable Framework behind 
 
 **NOTE**: It is much quicker to use a populator to set the references in your GameObjectList automatically rather than to write your own code for it. See the Populators manual for further details.
 
-## StateMachines via UI Components
+## UpdateState via UI Components
 
 Traditionally, a UI component like a button or a dropdown would have an instance of a MonoBehaviour dragged into them so that one of its methods could be assigned for the UI object to invoke. What most people don't know is, you can also do this with ScriptableObjects!
 

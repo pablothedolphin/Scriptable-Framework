@@ -1,6 +1,6 @@
 # Scriptable Framework
 
-In this repository you will find the source code, assets and project settings of the Scriptable Framework for Unity app development (Unity 2018.3.11 or newer recommended) along with a DocFX project containing documentation assets and articles.
+In this repository you will find the source code, assets and project settings of the Scriptable Framework for Unity app development (Unity 2018.4.4 or newer recommended) along with a DocFX project containing documentation assets and articles.
 
 ---
 

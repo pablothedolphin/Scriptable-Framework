@@ -39,7 +39,10 @@ namespace ScriptableFramework
 			{
 				#if UNITY_EDITOR
 				UnityEditor.EditorUtility.SetDirty (objects[i]);
-				#endif
+#endif
+
+				// prevent accidentally unloading the object on scene change.
+				objects[i].hideFlags = HideFlags.DontUnloadUnusedAsset;
 
 				objects[i].Reset ();
 			}

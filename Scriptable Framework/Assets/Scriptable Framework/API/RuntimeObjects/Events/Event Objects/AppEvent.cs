@@ -36,18 +36,8 @@ namespace ScriptableFramework
         {
 #if UNITY_EDITOR
 			if (ScriptableFrameworkSettings.EditorEventLogging)
-			{
 #endif
-				//System.Diagnostics.StackFrame stackFrame = new System.Diagnostics.StackFrame (1, false);
-
-
-				//Debug.Log (string.Format ("[EVENT] '{0}' was raised from {1}.{2} at line {3}", name, Path.GetFileNameWithoutExtension (stackFrame.GetFileName ()), stackFrame.GetMethod ().Name, stackFrame.GetFileLineNumber ()));
 				Debug.Log (string.Format ("[EVENT] '{0}' was raised from {1}.{2}() at line {3}", name, Path.GetFileNameWithoutExtension (fileName), methodName, callerLineNumber));
-
-#if UNITY_EDITOR
-			}
-#endif
-
 
 			if (listeners.Count == 0)
             {
@@ -68,6 +58,15 @@ namespace ScriptableFramework
 				Debug.LogError (string.Format ("[EVENT] '{0}' threw '{1}'\n{2}", name, e.Message, e.StackTrace));
 				return false;
 			}
+		}
+
+		/// <summary>
+		/// Simplified wrapper method that can be referenced by UnityEvents to allow directly calling
+		/// events from UI callbacks.
+		/// </summary>
+		public virtual void RaiseFromUI ()
+		{
+			RaiseEvent ();
 		}
 
         /// <summary>
@@ -158,12 +157,12 @@ namespace ScriptableFramework
 		/// <param name="callerLineNumber">Line number the event was raised from (assigned automatically)</param>
 		/// <returns>Returns whether or not the event was raised successfully.</returns>
 		public override bool RaiseEvent ([CallerFilePath] string fileName = "", [CallerMemberName] string methodName = "", [CallerLineNumber] int callerLineNumber = 0)
-        {
-            if (valueForManualTrigger == null)
-                return RaiseEvent (Activator.CreateInstance<T> (), fileName, methodName, callerLineNumber);
-            else
-                return RaiseEvent (valueForManualTrigger, fileName, methodName, callerLineNumber);
-        }
+		{
+			if (valueForManualTrigger == null)
+				return RaiseEvent (Activator.CreateInstance<T> (), fileName, methodName, callerLineNumber);
+			else
+				return RaiseEvent (valueForManualTrigger, fileName, methodName, callerLineNumber);
+		}
 
 		/// <summary>
 		/// Invoke every function callback that is delegated to every event listener that is listenning 
@@ -176,7 +175,7 @@ namespace ScriptableFramework
 		/// <param name="methodName">Name of the method the event was raised from (assigned automatically)</param>
 		/// <param name="callerLineNumber">Line number the event was raised from (assigned automatically)</param>
 		/// <returns>Returns whether or not the event was raised successfully.</returns>
-		public bool RaiseEvent (T value, [CallerFilePath] string fileName = "", [CallerMemberName] string methodName = "", [CallerLineNumber] int callerLineNumber = 0)
+		public virtual bool RaiseEvent (T value, [CallerFilePath] string fileName = "", [CallerMemberName] string methodName = "", [CallerLineNumber] int callerLineNumber = 0)
         {
 #if UNITY_EDITOR
 			if (ScriptableFrameworkSettings.EditorEventLogging)
@@ -205,12 +204,22 @@ namespace ScriptableFramework
 
         }
 
-        /// <summary>
-        /// If not already registered, add an app event listener to this event's list of listeners.
-        /// </summary>
-        /// <param name="listener">An instance of a listener component in the current scene.</param>
-        /// <returns>Returns whether or not the listener was registered successfully.</returns>
-        public bool RegisterListener (AppEventListener<T> listener)
+		/// <summary>
+		/// Simplified wrapper method that can be referenced by UnityEvents to allow directly calling
+		/// events from UI callbacks.
+		/// </summary>
+		/// <param name="value">The dynamic or static value passed from the UI.</param>
+		public virtual void RaiseFromUI (T value)
+		{
+			RaiseEvent (value);
+		}
+
+		/// <summary>
+		/// If not already registered, add an app event listener to this event's list of listeners.
+		/// </summary>
+		/// <param name="listener">An instance of a listener component in the current scene.</param>
+		/// <returns>Returns whether or not the listener was registered successfully.</returns>
+		public bool RegisterListener (AppEventListener<T> listener)
         {
             if (listener == null) return false;
 
@@ -278,14 +287,6 @@ namespace ScriptableFramework
 			Resources.LoadAll<RuntimeObjectDatabase> ("/")[0].RegisterEvent (this);
 		}*/
 
-		/// <summary>
-		/// Invoke every function callback that is delegated to every event listener that is listenning 
-		/// to this event.
-		/// </summary>
-		/// <param name="fileName">Name of the .cs file the event was raised from (assigned automatically)</param>
-		/// <param name="methodName">Name of the method the event was raised from (assigned automatically)</param>
-		/// <param name="callerLineNumber">Line number the event was raised from (assigned automatically)</param>
-		/// <returns>Returns whether or not the event was raised successfully.</returns>
 		public abstract bool RaiseEvent ([CallerFilePath] string fileName = "", [CallerMemberName] string methodName = "", [CallerLineNumber] int callerLineNumber = 0);
-    }
+	}
 }

@@ -34,6 +34,20 @@ namespace ScriptableFramework
 		public bool UseCustomDefault { get => useCustomDefault; set => useCustomDefault = value; }
 
 		/// <summary>
+		/// Shorthand for calling <c>Clear ()</c> and then adding a number of default objects. 
+		/// </summary>
+		/// <param name="newCount">The number of default objects to add.</param>
+		public override void Initialise (int newCount)
+		{
+			Clear ();
+
+			for (int i = 0; i < newCount; i++)
+			{
+				Add (Activator.CreateInstance<T> ());
+			}
+		}
+
+		/// <summary>
 		/// Empties the current internal list.
 		/// </summary>
 		public override void Clear () => items.Clear ();

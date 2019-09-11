@@ -52,6 +52,8 @@ public class EventRaiser : MonoBehaviour
 }
 ```
 
+This code can be skipped entirely if you raise your events directly from UI components (see event objects manual for details). This code is just to illustraite how most of your code with event objects will look.
+
 ## Events
 
 Next, create a folder called Resources and create both an AppEvent and IntEvent inside of it. A few things to note here are that we included the `Scriptable Framework` namespace at the top, we have public references to our events so that they can be assigned with a drag and drop and that the generic event is being raised with a number being passed through it.
