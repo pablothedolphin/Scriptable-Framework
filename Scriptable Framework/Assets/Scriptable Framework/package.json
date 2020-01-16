@@ -2,7 +2,7 @@
   "name": "com.open.scriptable-framework",
   "displayName": "Scriptable Framework",
   "author": "Jak Hussain, Dean Giddy, Conor Galvin",
-  "version": "1.2.10",
+  "version": "1.2.11",
   "unity": "2018.4",
   "description": "A modularity framework developed to better enable Unity developers to decouple and test their code using ScriptableObject based dependencies that can be dragged and dropped into the inspector. The API and workflow makes it easy to use advanced programming patterns and SOLID principals in your projects which promotes a higher quality of code. See GitHub for documentation.",
   "keywords": [

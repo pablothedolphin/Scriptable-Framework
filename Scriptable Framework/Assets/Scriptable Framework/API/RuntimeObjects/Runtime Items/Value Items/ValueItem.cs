@@ -39,6 +39,12 @@ namespace ScriptableFramework
 		public bool UseCustomDefault { get => useCustomDefault; set => useCustomDefault = value; }
 
 		/// <summary>
+		/// Included for <c>ValueItem</c>s to be set via UI events.
+		/// </summary>
+		/// <param name="newValue">The new value passed from the UI event.</param>
+		public void UpdateValue (T newValue) => value = newValue;
+
+		/// <summary>
 		/// Call the constructor of T and set value as the result.
 		/// </summary>
 		public override void Clear ()

@@ -16,7 +16,7 @@ In order to install Scriptable Framework in your project, add the following to t
 ``` js
 "scopedRegistries": [
     {
-        "name": "Scriptable Framework Packages",
+        "name": "Open Source Packages",
         "url": "http://35.227.114.200:8080",
         "scopes": [
             "com.open"

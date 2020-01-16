@@ -1689,6 +1689,19 @@ references:
   commentId: T:ScriptableFramework.IntValue
   fullName: ScriptableFramework.IntValue
   nameWithType: IntValue
+- uid: ScriptableFramework.IntValue.UpdateValue(System.Single)
+  name: UpdateValue(Single)
+  href: api/ScriptableFramework.IntValue.html#ScriptableFramework_IntValue_UpdateValue_System_Single_
+  commentId: M:ScriptableFramework.IntValue.UpdateValue(System.Single)
+  fullName: ScriptableFramework.IntValue.UpdateValue(System.Single)
+  nameWithType: IntValue.UpdateValue(Single)
+- uid: ScriptableFramework.IntValue.UpdateValue*
+  name: UpdateValue
+  href: api/ScriptableFramework.IntValue.html#ScriptableFramework_IntValue_UpdateValue_
+  commentId: Overload:ScriptableFramework.IntValue.UpdateValue
+  isSpec: "True"
+  fullName: ScriptableFramework.IntValue.UpdateValue
+  nameWithType: IntValue.UpdateValue
 - uid: ScriptableFramework.IReferenceContainer
   name: IReferenceContainer
   href: api/ScriptableFramework.IReferenceContainer.html
@@ -1775,6 +1788,30 @@ references:
   commentId: F:ScriptableFramework.MeshRendererReferencePopulator.referenceItem
   fullName: ScriptableFramework.MeshRendererReferencePopulator.referenceItem
   nameWithType: MeshRendererReferencePopulator.referenceItem
+- uid: ScriptableFramework.PathType
+  name: PathType
+  href: api/ScriptableFramework.PathType.html
+  commentId: T:ScriptableFramework.PathType
+  fullName: ScriptableFramework.PathType
+  nameWithType: PathType
+- uid: ScriptableFramework.PathType.Auto
+  name: Auto
+  href: api/ScriptableFramework.PathType.html#ScriptableFramework_PathType_Auto
+  commentId: F:ScriptableFramework.PathType.Auto
+  fullName: ScriptableFramework.PathType.Auto
+  nameWithType: PathType.Auto
+- uid: ScriptableFramework.PathType.Persistent
+  name: Persistent
+  href: api/ScriptableFramework.PathType.html#ScriptableFramework_PathType_Persistent
+  commentId: F:ScriptableFramework.PathType.Persistent
+  fullName: ScriptableFramework.PathType.Persistent
+  nameWithType: PathType.Persistent
+- uid: ScriptableFramework.PathType.Streaming
+  name: Streaming
+  href: api/ScriptableFramework.PathType.html#ScriptableFramework_PathType_Streaming
+  commentId: F:ScriptableFramework.PathType.Streaming
+  fullName: ScriptableFramework.PathType.Streaming
+  nameWithType: PathType.Streaming
 - uid: ScriptableFramework.Platform
   name: Platform
   href: api/ScriptableFramework.Platform.html
@@ -1833,6 +1870,19 @@ references:
   isSpec: "True"
   fullName: ScriptableFramework.Platform.IsWeb
   nameWithType: Platform.IsWeb
+- uid: ScriptableFramework.Platform.Path(ScriptableFramework.PathType)
+  name: Path(PathType)
+  href: api/ScriptableFramework.Platform.html#ScriptableFramework_Platform_Path_ScriptableFramework_PathType_
+  commentId: M:ScriptableFramework.Platform.Path(ScriptableFramework.PathType)
+  fullName: ScriptableFramework.Platform.Path(ScriptableFramework.PathType)
+  nameWithType: Platform.Path(PathType)
+- uid: ScriptableFramework.Platform.Path*
+  name: Path
+  href: api/ScriptableFramework.Platform.html#ScriptableFramework_Platform_Path_
+  commentId: Overload:ScriptableFramework.Platform.Path
+  isSpec: "True"
+  fullName: ScriptableFramework.Platform.Path
+  nameWithType: Platform.Path
 - uid: ScriptableFramework.Platform.PersistentPath
   name: PersistentPath
   href: api/ScriptableFramework.Platform.html#ScriptableFramework_Platform_PersistentPath
@@ -1846,6 +1896,19 @@ references:
   isSpec: "True"
   fullName: ScriptableFramework.Platform.PersistentPath
   nameWithType: Platform.PersistentPath
+- uid: ScriptableFramework.Platform.StreamingPath
+  name: StreamingPath
+  href: api/ScriptableFramework.Platform.html#ScriptableFramework_Platform_StreamingPath
+  commentId: P:ScriptableFramework.Platform.StreamingPath
+  fullName: ScriptableFramework.Platform.StreamingPath
+  nameWithType: Platform.StreamingPath
+- uid: ScriptableFramework.Platform.StreamingPath*
+  name: StreamingPath
+  href: api/ScriptableFramework.Platform.html#ScriptableFramework_Platform_StreamingPath_
+  commentId: Overload:ScriptableFramework.Platform.StreamingPath
+  isSpec: "True"
+  fullName: ScriptableFramework.Platform.StreamingPath
+  nameWithType: Platform.StreamingPath
 - uid: ScriptableFramework.ReferenceItem`1
   name: ReferenceItem<T>
   href: api/ScriptableFramework.ReferenceItem-1.html
@@ -3069,6 +3132,19 @@ references:
   commentId: T:ScriptableFramework.StringValue
   fullName: ScriptableFramework.StringValue
   nameWithType: StringValue
+- uid: ScriptableFramework.StringValue.UpdateValue(System.String)
+  name: UpdateValue(String)
+  href: api/ScriptableFramework.StringValue.html#ScriptableFramework_StringValue_UpdateValue_System_String_
+  commentId: M:ScriptableFramework.StringValue.UpdateValue(System.String)
+  fullName: ScriptableFramework.StringValue.UpdateValue(System.String)
+  nameWithType: StringValue.UpdateValue(String)
+- uid: ScriptableFramework.StringValue.UpdateValue*
+  name: UpdateValue
+  href: api/ScriptableFramework.StringValue.html#ScriptableFramework_StringValue_UpdateValue_
+  commentId: Overload:ScriptableFramework.StringValue.UpdateValue
+  isSpec: "True"
+  fullName: ScriptableFramework.StringValue.UpdateValue
+  nameWithType: StringValue.UpdateValue
 - uid: ScriptableFramework.Tests
   name: ScriptableFramework.Tests
   href: api/ScriptableFramework.Tests.html
@@ -5447,6 +5523,23 @@ references:
   fullName.vb: ScriptableFramework.ValueItem(Of T).Reset
   nameWithType: ValueItem<T>.Reset
   nameWithType.vb: ValueItem(Of T).Reset
+- uid: ScriptableFramework.ValueItem`1.UpdateValue(`0)
+  name: UpdateValue(T)
+  href: api/ScriptableFramework.ValueItem-1.html#ScriptableFramework_ValueItem_1_UpdateValue__0_
+  commentId: M:ScriptableFramework.ValueItem`1.UpdateValue(`0)
+  fullName: ScriptableFramework.ValueItem<T>.UpdateValue(T)
+  fullName.vb: ScriptableFramework.ValueItem(Of T).UpdateValue(T)
+  nameWithType: ValueItem<T>.UpdateValue(T)
+  nameWithType.vb: ValueItem(Of T).UpdateValue(T)
+- uid: ScriptableFramework.ValueItem`1.UpdateValue*
+  name: UpdateValue
+  href: api/ScriptableFramework.ValueItem-1.html#ScriptableFramework_ValueItem_1_UpdateValue_
+  commentId: Overload:ScriptableFramework.ValueItem`1.UpdateValue
+  isSpec: "True"
+  fullName: ScriptableFramework.ValueItem<T>.UpdateValue
+  fullName.vb: ScriptableFramework.ValueItem(Of T).UpdateValue
+  nameWithType: ValueItem<T>.UpdateValue
+  nameWithType.vb: ValueItem(Of T).UpdateValue
 - uid: ScriptableFramework.ValueItem`1.useCustomDefault
   name: useCustomDefault
   href: api/ScriptableFramework.ValueItem-1.html#ScriptableFramework_ValueItem_1_useCustomDefault

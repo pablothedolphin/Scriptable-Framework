@@ -10,7 +10,7 @@ namespace ScriptableFramework
 	public static class Platform
 	{
 		/// <summary>
-		/// Is the current build considered a desktop platform?
+		/// Is the current build consided a desktop platform?
 		/// </summary>
 		public static bool IsDesktop
 		{
@@ -89,11 +89,28 @@ namespace ScriptableFramework
 		/// <summary>
 		/// Returns <c>Application.persistentDataPath</c> with a "/" at the end for convenience.
 		/// </summary>
-		public static string PersistentPath
+		public static string PersistentPath => Application.persistentDataPath + "/";
+
+		/// <summary>
+		/// Returns <c>Application.streamingAssetsPath</c> with a "/" at the end for convenience.
+		/// </summary>
+		public static string StreamingPath => Application.streamingAssetsPath + "/";
+
+		/// <summary>
+		/// Returns either <c>Platform.PersistentPath</c> or <c>Platform.StreamingPath</c> based on the type provided.
+		/// </summary>
+		/// <param name="type">The desired path type. Designed for the value to be assigned in the inspector for convenience.</param>
+		/// <returns>The desired path.</returns>
+		public static string Path (PathType type)
 		{
-			get
+			switch (type)
 			{
-				return Application.persistentDataPath + "/";
+				case PathType.Persistent:
+					return PersistentPath;
+				case PathType.Streaming:
+					return StreamingPath;
+				default:
+					return FilePath;
 			}
 		}
 	}

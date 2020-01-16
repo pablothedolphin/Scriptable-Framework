@@ -236,6 +236,9 @@
                           <li class="">
                             <a href="ScriptableFramework.MeshRendererReferencePopulator.html" title="MeshRendererReferencePopulator" class="">MeshRendererReferencePopulator</a>
                           </li>
+                          <li class="">
+                            <a href="ScriptableFramework.PathType.html" title="PathType" class="">PathType</a>
+                          </li>
                           <li class="active">
                             <a href="ScriptableFramework.Platform.html" title="Platform" class="active">Platform</a>
                           </li>
@@ -584,7 +587,7 @@ depending on which is appropriate for the platform generally speaking.</p>
   
   <a id="ScriptableFramework_Platform_IsDesktop_" data-uid="ScriptableFramework.Platform.IsDesktop*"></a>
   <h4 id="ScriptableFramework_Platform_IsDesktop" data-uid="ScriptableFramework.Platform.IsDesktop">IsDesktop</h4>
-  <div class="markdown level1 summary"><p>Is the current build considered a desktop platform?</p>
+  <div class="markdown level1 summary"><p>Is the current build consided a desktop platform?</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -681,6 +684,79 @@ depending on which is appropriate for the platform generally speaking.</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ScriptableFramework_Platform_StreamingPath_" data-uid="ScriptableFramework.Platform.StreamingPath*"></a>
+  <h4 id="ScriptableFramework_Platform_StreamingPath" data-uid="ScriptableFramework.Platform.StreamingPath">StreamingPath</h4>
+  <div class="markdown level1 summary"><p>Returns <code>Application.streamingAssetsPath</code> with a &quot;/&quot; at the end for convenience.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string StreamingPath { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="ScriptableFramework_Platform_Path_" data-uid="ScriptableFramework.Platform.Path*"></a>
+  <h4 id="ScriptableFramework_Platform_Path_ScriptableFramework_PathType_" data-uid="ScriptableFramework.Platform.Path(ScriptableFramework.PathType)">Path(PathType)</h4>
+  <div class="markdown level1 summary"><p>Returns either <code>Platform.PersistentPath</code> or <code>Platform.StreamingPath</code> based on the type provided.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Path(PathType type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ScriptableFramework.PathType.html">PathType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The desired path type. Designed for the value to be assigned in the inspector for convenience.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The desired path.</p>
+</td>
       </tr>
     </tbody>
   </table>
