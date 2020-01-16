@@ -648,6 +648,96 @@ the base .NET/Unity APIs.</p>
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="ScriptableFramework_Extensions_ToDateTime_" data-uid="ScriptableFramework.Extensions.ToDateTime*"></a>
+  <h4 id="ScriptableFramework_Extensions_ToDateTime_System_String_" data-uid="ScriptableFramework.Extensions.ToDateTime(System.String)">ToDateTime(String)</h4>
+  <div class="markdown level1 summary"><p>Allows direct conversion of a <code>string</code> which happens to represent a time or date into a <code>DateTime</code> value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DateTime ToDateTime(this string dateTimeString)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">dateTimeString</span></td>
+        <td><p>The string to convert</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><p>A new <code>DateTime</code> value derived from the string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ScriptableFramework_Extensions_ToStandardFormat_" data-uid="ScriptableFramework.Extensions.ToStandardFormat*"></a>
+  <h4 id="ScriptableFramework_Extensions_ToStandardFormat_DateTime_" data-uid="ScriptableFramework.Extensions.ToStandardFormat(DateTime)">ToStandardFormat(DateTime)</h4>
+  <div class="markdown level1 summary"><p>Allows direct conversion of a <code>DateTime</code> value to a string that goes from years to seconds in decending order.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToStandardFormat(this DateTime dateTime)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><span class="parametername">dateTime</span></td>
+        <td><p>The value to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A new standard format string of the value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           

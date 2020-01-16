@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -30,5 +31,35 @@ namespace ScriptableFramework
 		/// <param name="value">The current instance of the enum value.</param>
 		/// <returns>The enum value converted into a string.</returns>
 		public static string GetName<T> (this T value) where T : struct, IConvertible => Enum.GetName (typeof (T), value);
+
+		/// <summary>
+		/// Allows direct conversion of a <c>DateTime</c> value to a string that goes from years to seconds in decending order.
+		/// </summary>
+		/// <param name="dateTime">The value to convert.</param>
+		/// <returns>A new standard format string of the value.</returns>
+		public static string ToStandardFormat (this DateTime dateTime) => dateTime.ToString ("yyyy-MM-dd HH:mm:ss");
+
+		/// <summary>
+		/// Allows direct conversion of a <c>string</c> which happens to represent a time or date into a <c>DateTime</c> value.
+		/// </summary>
+		/// <param name="dateTimeString">The string to convert</param>
+		/// <returns>A new <c>DateTime</c> value derived from the string.</returns>
+		public static DateTime ToDateTime (this string dateTimeString)
+		{
+			if (DateTime.TryParseExact (dateTimeString, "yyyy-MM-dd HH:mm:ss", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime timeStampResult))
+			{
+				return timeStampResult;
+			}
+			else
+			{
+				DateTime tempDate = DateTime.Parse (dateTimeString);
+				string sYear = tempDate.ToString ("yyyy");
+				string sMonth = tempDate.Month.ToString ().PadLeft (2, '0');
+				string sDay = tempDate.Day.ToString ().PadLeft (2, '0');
+				string sTime = tempDate.TimeOfDay.ToString ();
+				string date = string.Format ("{0}-{1}-{2} {3}", sYear, sMonth, sDay, sTime);
+				return DateTime.ParseExact (date, "yyyy-MM-dd HH:mm:ss", CultureInfo.InvariantCulture);
+			}
+		}
 	}
 }

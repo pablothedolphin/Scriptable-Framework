@@ -1475,6 +1475,32 @@ references:
   fullName.vb: ScriptableFramework.Extensions.GetName(Of T)(T)
   nameWithType: Extensions.GetName<T>(T)
   nameWithType.vb: Extensions.GetName(Of T)(T)
+- uid: ScriptableFramework.Extensions.ToDateTime(System.String)
+  name: ToDateTime(String)
+  href: api/ScriptableFramework.Extensions.html#ScriptableFramework_Extensions_ToDateTime_System_String_
+  commentId: M:ScriptableFramework.Extensions.ToDateTime(System.String)
+  fullName: ScriptableFramework.Extensions.ToDateTime(System.String)
+  nameWithType: Extensions.ToDateTime(String)
+- uid: ScriptableFramework.Extensions.ToDateTime*
+  name: ToDateTime
+  href: api/ScriptableFramework.Extensions.html#ScriptableFramework_Extensions_ToDateTime_
+  commentId: Overload:ScriptableFramework.Extensions.ToDateTime
+  isSpec: "True"
+  fullName: ScriptableFramework.Extensions.ToDateTime
+  nameWithType: Extensions.ToDateTime
+- uid: ScriptableFramework.Extensions.ToStandardFormat(DateTime)
+  name: ToStandardFormat(DateTime)
+  href: api/ScriptableFramework.Extensions.html#ScriptableFramework_Extensions_ToStandardFormat_DateTime_
+  commentId: M:ScriptableFramework.Extensions.ToStandardFormat(DateTime)
+  fullName: ScriptableFramework.Extensions.ToStandardFormat(DateTime)
+  nameWithType: Extensions.ToStandardFormat(DateTime)
+- uid: ScriptableFramework.Extensions.ToStandardFormat*
+  name: ToStandardFormat
+  href: api/ScriptableFramework.Extensions.html#ScriptableFramework_Extensions_ToStandardFormat_
+  commentId: Overload:ScriptableFramework.Extensions.ToStandardFormat
+  isSpec: "True"
+  fullName: ScriptableFramework.Extensions.ToStandardFormat
+  nameWithType: Extensions.ToStandardFormat
 - uid: ScriptableFramework.FloatEvent
   name: FloatEvent
   href: api/ScriptableFramework.FloatEvent.html
