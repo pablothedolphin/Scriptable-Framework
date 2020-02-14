@@ -63,6 +63,6 @@ If you can't see the latest version of Scriptable Framework in the package manag
 
 For more information contact:
 
-* Jak Hussain - [GitHub](https://github.com/pablothedolphin), [Email](jak.hussain@arup.com)
-* Dean Giddy - [GitHub](https://github.com/DeanGiddy), [Email](dean.giddy@arup.com)
-* Conor Galvin - [GitHub](https://github.com/Cvnvr), [Email](conor.galvin@arup.com)
+* Jak Hussain - [GitHub](https://github.com/pablothedolphin)
+* Dean Giddy - [GitHub](https://github.com/DeanGiddy)
+* Conor Galvin - [GitHub](https://github.com/Cvnvr)
