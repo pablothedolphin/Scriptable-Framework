@@ -146,6 +146,11 @@ namespace ScriptableFramework
 
 			if (gameObjects.Count == 0) return;
 
+			for (int i = 0; i < gameObjects.Count; i++)
+			{
+				if (gameObjects[i] == null) return;
+			}
+
 			switch (defaultState)
 			{
 				case DefaultState.AllActive:
@@ -165,13 +170,6 @@ namespace ScriptableFramework
 		/// </summary>
         public override void Reset ()
         {
-			if (gameObjects == null) return;
-
-			for (int i = 0; i < gameObjects.Count; i++)
-			{
-				if (gameObjects[i] == null) return;
-			}
-
 			Clear ();
         }
 	}
