@@ -21,3 +21,13 @@ The manifest.json file can be found under:
 This needs to be done once for each Unity project you intend to use Scriptable Framework with because new Unity projects are always created with the default manifest.json file for that editor version.
 
 If you can't see the latest version of Scriptable Framework in the package manager UI, it's likely because it supports only a later version of Unity than you are currently using.
+
+In addition to this, you must also update your list of dependencies to include the Scriptable Framework. For example...
+
+``` js
+"dependencies": {
+    "com.open.scriptable-framework": "1.2.5",
+    "com.unity.ads": "2.0.8"
+ }
+```
+Keep in mind that you will most likely have a larger list of dependencies than what is depicted in the example above. The line beginning with "com.unity.ads" merely serves as a placeholder to show that the necessary "com.open.scriptable-framework" is inserted into the dependencies list.
