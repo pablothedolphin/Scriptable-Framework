@@ -8,7 +8,7 @@
     <title>How To Install </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="How To Install ">
-    <meta name="generator" content="docfx 2.40.7.0">
+    <meta name="generator" content="docfx 2.50.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -209,6 +209,14 @@
 <p>&quot;YOUR-PROJECT-FOLDER&quot; &gt; Packages &gt; manifest.json</p>
 <p>This needs to be done once for each Unity project you intend to use Scriptable Framework with because new Unity projects are always created with the default manifest.json file for that editor version.</p>
 <p>If you can't see the latest version of Scriptable Framework in the package manager UI, it's likely because it supports only a later version of Unity than you are currently using.</p>
+<hr>
+<p><strong>Note:</strong> In some versions of Unity there is a bug with the package manager in how it communicates with scoped registries. If you don't see any new packages appear, you must also update your list of dependencies to include the Scriptable Framework. For example...</p>
+<pre><code class="lang-js">&quot;dependencies&quot;: {
+    &quot;com.open.scriptable-framework&quot;: &quot;1.2.5&quot;,
+    &quot;com.unity.ads&quot;: &quot;2.0.8&quot;
+ }
+</code></pre>
+<p>Keep in mind that you will most likely have a larger list of dependencies than what is depicted in the example above. The line beginning with &quot;com.unity.ads&quot; merely serves as a placeholder to show that the necessary &quot;com.open.scriptable-framework&quot; is inserted into the dependencies list.</p>
 </article>
           </div>
           

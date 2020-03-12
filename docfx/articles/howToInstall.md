@@ -22,7 +22,9 @@ This needs to be done once for each Unity project you intend to use Scriptable F
 
 If you can't see the latest version of Scriptable Framework in the package manager UI, it's likely because it supports only a later version of Unity than you are currently using.
 
-In addition to this, you must also update your list of dependencies to include the Scriptable Framework. For example...
+---
+
+**Note:** In some versions of Unity there is a bug with the package manager in how it communicates with scoped registries. If you don't see any new packages appear, you must also update your list of dependencies to include the Scriptable Framework. For example...
 
 ``` js
 "dependencies": {
