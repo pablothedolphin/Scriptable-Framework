@@ -1,5 +1,7 @@
 # Scriptable Framework
 
+[![openupm](https://img.shields.io/npm/v/com.open.scriptable-framework?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.open.scriptable-framework/)
+
 In this repository you will find the source code, assets and project settings of the Scriptable Framework for Unity app development (Unity 2018.4.4 or newer recommended) along with a DocFX project containing documentation assets and articles.
 
 ---
